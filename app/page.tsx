@@ -104,10 +104,12 @@ export default function HomePage() {
     var element = document.getElementById("info"); //Gets info panel
 
     //Updates animation
-
+    if (element !== null) {
+      forceAnimation(element);
+    }
 
     //Iterates to the next info panel
-    setCurProj(nextVal(info, curInfo));
+    setCurInfo(nextVal(info, curInfo));
   }
   const incProj = () => {
     var element = document.getElementById("proj1"); //Gets project panel
