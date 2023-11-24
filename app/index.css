@@ -14,14 +14,14 @@ html {
 /*Redefines text styles*/
 h2 {
     color: rgb(0, 0, 0);
-    font-size: 32px;
+    font-size: 28px;
     margin-top: 0;
     margin-bottom: 0;
 }
 
 p {
     color: rgb(82, 86, 90);
-    font-size: 19px;
+    font-size: 18px;
     margin-top: 0;
     margin-bottom: 0;
     white-space: pre-wrap;
@@ -29,7 +29,7 @@ p {
 
 /*Lighter text color*/
 .light {
-    color: rgb(82, 86, 90);
+    color: rgb(102, 106, 110);
 }
 
 /*Container to hold the website*/
@@ -121,6 +121,8 @@ p {
 
 .box.skills {
     height: 100px;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .box.run {
@@ -141,22 +143,16 @@ p {
 
 /*Text to reveal on hover*/
 
-.visit1 {
+.visit1, .visit2 {
     visibility: hidden;
 }
 
 .box.projectView:hover .visit1 {
     visibility: visible;
-    color: rgb(82, 86, 90);
-}
-
-.visit2 {
-    visibility: hidden;
 }
 
 .box.skills:hover .visit2 {
     visibility: visible;
-    color: rgb(102, 106, 110);
 }
 
 /*Hover state for clickable images*/

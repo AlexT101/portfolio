@@ -134,7 +134,7 @@ export default function HomePage() {
           <div className="column">
             {projView ? (
               <UnstyledButton id="proj2" className="box projectView" component="a" href={projects[curProj].href} target="_blank" rel="noopener noreferrer">
-                <h2>{projects[curProj].name} <span className="visit1">: github</span></h2>
+                <h2>{projects[curProj].name} <span className="visit1 light">: github</span></h2>
                 <p>{projects[curProj].description}</p>
               </UnstyledButton>
             ) : (
@@ -153,11 +153,11 @@ export default function HomePage() {
             }
             {projView ? (
               <UnstyledButton className="box skills" onClick={incProj}>
-                <h2>next project <span className="visit2">: {projects[nextVal(projects, curProj)].name}</span></h2>
+                <h2>next project <span className="visit2 light">: {projects[nextVal(projects, curProj)].name}</span></h2>
               </UnstyledButton>
             ) : (
               <UnstyledButton className="box skills" onClick={incInfo}>
-                <h2>more info <span className="visit2">: {info[nextVal(info, curInfo)].title}</span></h2>
+                <h2>more info <span className="visit2 light">: {info[nextVal(info, curInfo)].title}</span></h2>
               </UnstyledButton>
             )}
           </div >
@@ -171,11 +171,11 @@ export default function HomePage() {
             </UnstyledButton>
             <div id="proj1" className="box projects">
               {projView ? (
-                <UnstyledButton component="img" className="projImg" src={projects[curProj].src} onClick={open} />
+                <UnstyledButton component="img" className="projImg" src={projects[curProj].src} onClick={open} loading="eager"/>
               ) : (
                 <>
                   <h2>projects</h2>
-                  <p>I build stuff in React. Try running my projects to see what I've been working on.</p>
+                  <p>I build stuff in React. Try running my projects (above) to see what I've been working on recently.</p>
                 </>
               )}
             </div>
@@ -183,7 +183,7 @@ export default function HomePage() {
         </div >
         <Divider className="offset" />
       </div>
-      <Modal opened={opened} onClose={close} title="Website Image" centered size="auto">
+      <Modal opened={opened} onClose={close} title={"Website Image: "+projects[curProj].name} centered size="auto">
         <img src={projects[curProj].src} className="bigImg" />
       </Modal>
     </main >
