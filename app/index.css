@@ -22,6 +22,7 @@ p {
     font-size: 19px;
     margin-top: 0;
     margin-bottom: 0;
+    white-space: pre-wrap;
 }
 
 .light {
@@ -50,7 +51,20 @@ p {
     justify-content: center;
 }
 
+@keyframes animate {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+        transform: scale(0.9);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
 .box {
+    animation: 0.35s ease 0s 1 animate;
     background-color: rgb(225, 228, 232);
     border: 1px solid rgb(225, 228, 232);
     border-radius: 20px;
@@ -72,7 +86,7 @@ p {
     height: 100px;
 }
 
-.box.image:hover {
+.box.image:hover, .box.skills:hover, .box.run:hover, .box.projectView:hover {
     background-color: rgb(245, 248, 252);
     border: 1px solid rgb(185, 188, 192);
 }
@@ -90,11 +104,6 @@ p {
     }
 }
 
-.box.skills:hover {
-    background-color: rgb(245, 248, 252);
-    border: 1px solid rgb(185, 188, 192);
-}
-
 .box.run {
     flex-grow: 1;
     height: 100px;
@@ -106,11 +115,6 @@ p {
     @media (max-width: 700px) {
         max-width: 630px;
     }
-}
-
-.box.run:hover {
-    background-color: rgb(245, 248, 252);
-    border: 1px solid rgb(185, 188, 192);
 }
 
 .box.projects {
@@ -126,6 +130,10 @@ p {
     }
 }
 
+.box.projects.img {
+    align-items: center;
+}
+
 .box.projectView {
     flex-grow: 1;
     height: 360px;
@@ -139,11 +147,39 @@ p {
     }
 }
 
+.visit1 {
+    visibility: hidden;
+}
+
+.box.projectView:hover .visit1{
+    visibility: visible;
+    color: rgb(82, 86, 90);
+}
+
+.visit2 {
+    visibility: hidden;
+}
+
+.box.skills:hover .visit2{
+    visibility: visible;
+    color: rgb(102, 106, 110);
+}
+
 .projImg {
     width: calc(100% - 20px);
+    transition: 0.25s;
+}
+.projImg:hover {
+    filter: brightness(0.75);
+    scale: 1.05;
+}
+
+.bigImg {
+    width: 100%;
 }
 
 .offset {
     margin-top: -10px;
     margin-bottom: -10px;
 }
+
