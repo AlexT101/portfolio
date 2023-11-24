@@ -1,5 +1,3 @@
-# Mantine Next Template
+# Portfolio
 
-Get started with the template by clicking `Use this template` button on the top of the page.
-
-[Documentation](https://mantine.dev/guides/next/)
+This is my portfolio website.

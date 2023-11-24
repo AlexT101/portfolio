@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css?family=Open Sans:300,400,700&display=swap');
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: "Open Sans", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h2 {
+    color: rgb(0, 0, 0);
+    font-size: 32px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+p {
+    color: rgb(82, 86, 90);
+    font-size: 19px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.light {
+    color: rgb(82, 86, 90);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding: 50px;
+}
+
+.row {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box {
+    background-color: rgb(225, 228, 232);
+    border: 1px solid rgb(225, 228, 232);
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+}
+
+.box.info {
+    width: 400px;
+    height: 360px;
+}
+
+.box.image {
+    padding: 0;
+    flex-grow: 1;
+    width: 200px;
+    height: 100px;
+}
+
+.box.image:hover {
+    background-color: rgb(245, 248, 252);
+    border: 1px solid rgb(185, 188, 192);
+}
+
+.box.skills {
+    flex-grow: 1;
+    height: 100px;
+
+    @media (min-width: 700px) {
+        width: 630px;
+    }
+
+    @media (max-width: 700px) {
+        max-width: 630px;
+    }
+}
+
+.box.skills:hover {
+    background-color: rgb(245, 248, 252);
+    border: 1px solid rgb(185, 188, 192);
+}
+
+.box.run {
+    flex-grow: 1;
+    height: 100px;
+
+    @media (min-width: 700px) {
+        width: 630px;
+    }
+
+    @media (max-width: 700px) {
+        max-width: 630px;
+    }
+}
+
+.box.run:hover {
+    background-color: rgb(245, 248, 252);
+    border: 1px solid rgb(185, 188, 192);
+}
+
+.box.projects {
+    flex-grow: 1;
+    height: 360px;
+
+    @media (min-width: 700px) {
+        width: 630px;
+    }
+
+    @media (max-width: 700px) {
+        max-width: 630px;
+    }
+}
+
+.box.projectView {
+    flex-grow: 1;
+    height: 360px;
+
+    @media (min-width: 700px) {
+        width: 630px;
+    }
+
+    @media (max-width: 700px) {
+        max-width: 630px;
+    }
+}
+
+.projImg {
+    width: calc(100% - 20px);
+}
+
+.offset {
+    margin-top: -10px;
+    margin-bottom: -10px;
+}
