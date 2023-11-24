@@ -1,3 +1,4 @@
+/*Imports Open Sans from Google Fonts*/
 @import url('https://fonts.googleapis.com/css?family=Open Sans:300,400,700&display=swap');
 
 body {
@@ -10,6 +11,7 @@ html {
     scroll-behavior: smooth;
 }
 
+/*Redefines text styles*/
 h2 {
     color: rgb(0, 0, 0);
     font-size: 32px;
@@ -25,10 +27,12 @@ p {
     white-space: pre-wrap;
 }
 
+/*Lighter text color*/
 .light {
     color: rgb(82, 86, 90);
 }
 
+/*Container to hold the website*/
 .container {
     display: flex;
     justify-content: center;
@@ -36,6 +40,7 @@ p {
     padding: 50px;
 }
 
+/*Flex Box for rows and columns*/
 .row {
     display: flex;
     gap: 30px;
@@ -51,18 +56,22 @@ p {
     justify-content: center;
 }
 
+/*Animation for all boxes*/
 @keyframes animate {
     0% {
-      transform: scale(1);
+        transform: scale(1);
     }
+
     50% {
         transform: scale(0.9);
     }
-    100% {
-      transform: scale(1);
-    }
-  }
 
+    100% {
+        transform: scale(1);
+    }
+}
+
+/*CSS for all boxes*/
 .box {
     animation: 0.35s ease 0s 1 animate;
     background-color: rgb(225, 228, 232);
@@ -74,6 +83,30 @@ p {
     justify-content: space-between;
 }
 
+/*Hover states for clickable boxes*/
+.box.image:hover,
+.box.skills:hover,
+.box.run:hover,
+.box.projectView:hover {
+    background-color: rgb(245, 248, 252);
+    border: 1px solid rgb(185, 188, 192);
+}
+
+/*Responsive sizing for large width boxes*/
+.box.skills,
+.box.run,
+.box.projects,
+.box.projectView {
+    @media (min-width: 700px) {
+        width: 630px;
+    }
+
+    @media (max-width: 700px) {
+        max-width: 630px;
+    }
+}
+
+/*Custom definitions for various boxes*/
 .box.info {
     width: 400px;
     height: 360px;
@@ -86,48 +119,16 @@ p {
     height: 100px;
 }
 
-.box.image:hover, .box.skills:hover, .box.run:hover, .box.projectView:hover {
-    background-color: rgb(245, 248, 252);
-    border: 1px solid rgb(185, 188, 192);
-}
-
 .box.skills {
-    flex-grow: 1;
     height: 100px;
-
-    @media (min-width: 700px) {
-        width: 630px;
-    }
-
-    @media (max-width: 700px) {
-        max-width: 630px;
-    }
 }
 
 .box.run {
-    flex-grow: 1;
     height: 100px;
-
-    @media (min-width: 700px) {
-        width: 630px;
-    }
-
-    @media (max-width: 700px) {
-        max-width: 630px;
-    }
 }
 
 .box.projects {
-    flex-grow: 1;
     height: 360px;
-
-    @media (min-width: 700px) {
-        width: 630px;
-    }
-
-    @media (max-width: 700px) {
-        max-width: 630px;
-    }
 }
 
 .box.projects.img {
@@ -135,23 +136,16 @@ p {
 }
 
 .box.projectView {
-    flex-grow: 1;
     height: 360px;
-
-    @media (min-width: 700px) {
-        width: 630px;
-    }
-
-    @media (max-width: 700px) {
-        max-width: 630px;
-    }
 }
+
+/*Text to reveal on hover*/
 
 .visit1 {
     visibility: hidden;
 }
 
-.box.projectView:hover .visit1{
+.box.projectView:hover .visit1 {
     visibility: visible;
     color: rgb(82, 86, 90);
 }
@@ -160,26 +154,32 @@ p {
     visibility: hidden;
 }
 
-.box.skills:hover .visit2{
+.box.skills:hover .visit2 {
     visibility: visible;
     color: rgb(102, 106, 110);
 }
+
+/*Hover state for clickable images*/
 
 .projImg {
     width: calc(100% - 20px);
     transition: 0.25s;
 }
+
 .projImg:hover {
     filter: brightness(0.75);
     scale: 1.05;
 }
 
+/*Full-size image for modal*/
+
 .bigImg {
     width: 100%;
 }
+
+/*Offset to reduce margins of Mantine dividers*/
 
 .offset {
     margin-top: -10px;
     margin-bottom: -10px;
 }
-

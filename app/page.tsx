@@ -2,18 +2,26 @@
 
 import './index.css';
 
+//Import dependencies
 import { useState } from 'react';
-import { UnstyledButton, Divider, Modal } from '@mantine/core';
-import { useDisclosure } from '@mantine/hooks';
+import { UnstyledButton, Divider, Modal } from '@mantine/core'; //Mantine components
+import { useDisclosure } from '@mantine/hooks'; //Hook for modal
 
+//Import button images
 import Github from '../public/github.png';
 import Linkedin from '../public/linkedin.png';
 import Contact from '../public/contact.png';
 
+//Import project images
 import ImmerseGT from '../public/immerse-gt.png';
 import GreenJournal from '../public/green-journal.png';
 import Roam from '../public/roam.png';
 
+//Import components
+import ImgButton from '../components/ImgButton';
+
+
+//JSON for storing project data
 const projects = [
   {
     name: "immerse-gt",
@@ -35,6 +43,7 @@ const projects = [
   }
 ]
 
+//JSON for storing info panel data
 const info = [
   {
     title: "about me",
@@ -52,18 +61,38 @@ const info = [
 
 export default function HomePage() {
 
-  const [projView, setProjView] = useState(false);
-  const [curInfo, setCurInfo] = useState(0);
-  const [curProj, setCurProj] = useState(0);
-  const [opened, { open, close }] = useDisclosure(false);
+  //State info about current view
+  const [projView, setProjView] = useState(false); //True = show projects
+  const [curInfo, setCurInfo] = useState(0); //Index of current info panel
+  const [curProj, setCurProj] = useState(0); //Index of current project
+  const [opened, { open, close }] = useDisclosure(false); //True = open modal
 
+  //Updates animation by removing and re-adding CSS property
+  const forceAnimation = (element: HTMLElement) => {
+    element.classList.remove("box");
+    element.offsetWidth;
+    element.classList.add("box");
+  }
+
+  //Returns next panel
+  const nextVal = (arr: Array<Object>, cur: number) => {
+    if (cur + 1 === arr.length) {
+      return 0;
+    } else {
+      return cur + 1;
+    }
+  }
+
+  //Functions to update states
   const toggleProjView = () => {
-    setProjView(!projView);
-    var element = document.getElementById("proj1");
+    setProjView(!projView); //Toggles project view
+    var element = document.getElementById("proj1"); //Gets project panel
+
+    //Updates animation
     if (element !== null) {
-      element.classList.remove("box");
-      element.offsetWidth;
-      element.classList.add("box");
+      forceAnimation(element);
+
+      //Adds CSS for image
       if (!projView) {
         element.classList.add("img");
       } else {
@@ -72,44 +101,26 @@ export default function HomePage() {
     }
   }
   const incInfo = () => {
-    var element = document.getElementById("info");
-    if (element !== null) {
-      element.classList.remove("box");
-      element.offsetWidth;
-      element.classList.add("box");
-    }
-    if (curInfo === info.length - 1) {
-      setCurInfo(0);
-    } else {
-      setCurInfo(curInfo + 1);
-    }
+    var element = document.getElementById("info"); //Gets info panel
+
+    //Updates animation
+
+
+    //Iterates to the next info panel
+    setCurProj(nextVal(info, curInfo));
   }
   const incProj = () => {
-    var element = document.getElementById("proj1");
-    if (element !== null) {
-      element.classList.remove("box");
-      element.offsetWidth;
-      element.classList.add("box");
-    }
-    var element2 = document.getElementById("proj2");
-    if (element2 !== null) {
-      element2.classList.remove("box");
-      element2.offsetWidth;
-      element2.classList.add("box");
-    }
-    if (curProj === projects.length - 1) {
-      setCurProj(0);
-    } else {
-      setCurProj(curProj + 1);
-    }
-  }
+    var element = document.getElementById("proj1"); //Gets project panel
+    var element2 = document.getElementById("proj2"); //Gets second project panel
 
-  const nextVal = (arr: Array<Object>, cur: number) => {
-    if (cur + 1 === arr.length) {
-      return 0;
-    } else {
-      return cur + 1;
+    //Updates animation
+    if (element !== null && element2 !== null) {
+      forceAnimation(element);
+      forceAnimation(element2);
     }
+
+    //Iterates to the next project panel
+    setCurProj(nextVal(projects, curProj));
   }
 
   return (
@@ -131,15 +142,9 @@ export default function HomePage() {
                   <p>{info[curInfo].description}</p>
                 </div>
                 <div className="column">
-                  <a href="https://github.com/AlexT101" target="_blank" rel="noopener noreferrer">
-                    <UnstyledButton component="img" src={Github.src} className="box image" />
-                  </a>
-                  <a href="https://www.linkedin.com/in/alext101/" target="_blank" rel="noopener noreferrer">
-                    <UnstyledButton component="img" src={Linkedin.src} className="box image" />
-                  </a>
-                  <a href="https://www.linkedin.com/in/alext101/" target="_blank" rel="noopener noreferrer">
-                    <UnstyledButton component="img" src={Contact.src} className="box image" />
-                  </a>
+                  <ImgButton src={Github.src} href="https://github.com/AlexT101" />
+                  <ImgButton src={Linkedin.src} href="https://www.linkedin.com/in/alext101/" />
+                  <ImgButton src={Contact.src} href="https://www.linkedin.com/in/alext101/" />
                 </div>
               </div>
             )
@@ -163,7 +168,6 @@ export default function HomePage() {
               )}
             </UnstyledButton>
             <div id="proj1" className="box projects">
-
               {projView ? (
                 <UnstyledButton component="img" className="projImg" src={projects[curProj].src} onClick={open} />
               ) : (
@@ -172,7 +176,6 @@ export default function HomePage() {
                   <p>I build stuff in React. Try running my projects to see what I've been working on.</p>
                 </>
               )}
-
             </div>
           </div>
         </div >
