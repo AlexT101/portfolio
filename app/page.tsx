@@ -16,7 +16,6 @@ import Contact from '../public/contact.png';
 import ImmerseGT from '../public/immerse-gt.png';
 import GreenJournal from '../public/green-journal.png';
 import Roam from '../public/roam.png';
-import Portfolio from '../public/portfolio.png';
 
 //Import components
 import ImgButton from '../components/ImgButton';
@@ -41,12 +40,6 @@ const projects = [
     description: "Log your travel experiences through pins on an interactive globe. Add locations to your travel history with notes to remember your journey, or plan your future adventures with a wishlist feature.",
     src: Roam.src,
     href: "https://github.com/michelle692/roam"
-  },
-  {
-    name: "portfolio",
-    description: "The portfolio you are viewing now!",
-    src: Portfolio.src,
-    href: "https://github.com/AlexT101/portfolio"
   }
 ]
 

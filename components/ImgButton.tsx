@@ -12,7 +12,7 @@ interface ImgButtonProps {
 const ImgButton = ({ src, href }: ImgButtonProps) => {
     return (
         <a href={href} target="_blank" rel="noopener noreferrer">
-            <UnstyledButton component="img" src={src} className="box image" />
+            <UnstyledButton component="img" src={src} className="box image" loading="eager"/>
         </a>
     )
 }
