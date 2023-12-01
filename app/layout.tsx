@@ -3,6 +3,7 @@ import React from "react";
 import { MantineProvider, ColorSchemeScript } from "@mantine/core";
 import { theme } from "../theme";
 import './index.css';
+import Navbar from '../components/Navbar';
 
 export const metadata = {
   title: "AlexT",
@@ -21,7 +22,8 @@ export default function RootLayout({ children }: { children: any }) {
         />
       </head>
       <body>
-        <MantineProvider theme={theme}>{children}</MantineProvider>
+      <Navbar/>
+        {children}
       </body>
     </html>
   );
