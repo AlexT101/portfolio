@@ -15,7 +15,7 @@ const Project = ({ type, title, role, img, href }: ProjectProps) => {
                 <p>{title}</p>
                 <p>{role}</p>
             </div>
-            <img src={img} />
+            <img src={img} className="cover"/>
         </a>
     )
 }

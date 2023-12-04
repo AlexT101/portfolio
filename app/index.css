@@ -30,6 +30,18 @@ html {
     justify-content: center;
 }
 
+@keyframes slide-down {
+    0% {
+      transform: translateY(-5vh);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
 .box {
     max-width: 400px;
     height: 400px;
@@ -47,6 +59,8 @@ html {
     justify-content: space-between;
     text-decoration-line: none;
     text-decoration: none;
+    animation: 0.4s ease 0s 1 slide-down;
+
 }
 
 .box.center {
@@ -56,14 +70,37 @@ html {
     padding: 40px;
 }
 
+h1 {
+    font-size: 3em;
+    font-family: 'Roboto Mono';
+    margin-bottom: 0;
+}
+
 h2 {
     font-size: 2em;
     font-family: 'Roboto Mono';
 }
 
-p {
+p, li {
     font-size: 1.2em;
     font-family: 'Roboto Mono';
+}
+
+li {
+    color: rgb(200, 201, 202);
+}
+
+a {
+    font-size: 1.2em;
+    font-family: 'Roboto Mono';
+    color: white;
+    text-decoration: none;
+    text-decoration-line: none;
+    margin: 0;
+}
+
+a.link:hover {
+    color: rgb(178, 178, 255);
 }
 
 .navbar {
@@ -80,6 +117,7 @@ p {
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
     border-bottom: 1px solid rgb(255, 255, 255);
 }
 
@@ -130,8 +168,8 @@ p {
     justify-content: space-between;
 }
 
-img {
-    width: 100%;
+img.cover {
+    width: 98%;
     margin-left: -25px;
     border-bottom-left-radius: 25px;
     border-top-right-radius: 20px;
@@ -143,4 +181,36 @@ img.logo {
     margin-left: 0px;
     margin-bottom: 25px;
     border-radius: 0;
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    align-items: center;
+    text-align: center;
+}
+
+.largeImg {
+    width: 100%;
+    border: 1px solid white;
+    border-radius: 25px;
+}
+
+.content {
+    width: 100%;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.subtext {
+    color: rgb(200, 201, 202);
+    margin-top: 0px;
 }
