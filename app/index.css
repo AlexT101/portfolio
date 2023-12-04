@@ -221,3 +221,21 @@ img.logo {
     color: rgb(200, 201, 202);
     margin-top: 0px;
 }
+.subtext2 {
+    color: rgb(200, 201, 202);
+    margin-top: 0.5em;
+}
+
+.logoContainer {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.noMargin {
+    margin-bottom: 0;
+}

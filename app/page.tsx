@@ -11,6 +11,89 @@ import Github from '../public/github.png';
 
 import Project from '../components/Project';
 
+import React from '../public/Logo1.svg';
+import HTML from '../public/Logo2.svg';
+import CSS from '../public/Logo3.svg';
+import JS from '../public/Logo4.svg';
+import TS from '../public/Logo5.svg';
+import Git from '../public/Logo6.svg';
+import AI from '../public/Logo7.svg';
+import Mantine from '../public/Logo8.svg';
+import Python from '../public/Logo9.svg';
+import MongoDB from '../public/Logo10.svg';
+import Figma from '../public/Logo11.svg';
+import Java from '../public/Logo12.svg';
+import CPlusPlus from '../public/Logo13.svg';
+
+const defaultWidth = 90;
+const tech = [
+  {
+    name: "React",
+    src: React.src,
+    variance: 1
+  },
+  {
+    name: "HTML",
+    src: HTML.src,
+    variance: 0.8
+  },
+  {
+    name: "CSS",
+    src: CSS.src,
+    variance: 0.8
+  },
+  {
+    name: "Javascript",
+    src: JS.src,
+    variance: 0.9
+  },
+  {
+    name: "Typescript",
+    src: TS.src,
+    variance: 0.9
+  },
+  {
+    name: "Github",
+    src: Git.src,
+    variance: 0.95
+  },
+  {
+    name: "Illustrator",
+    src: AI.src,
+    variance: 0.95
+  },
+  {
+    name: "Figma",
+    src: Figma.src,
+    variance: 0.65
+  },
+  {
+    name: "Mantine",
+    src: Mantine.src,
+    variance: 0.95
+  },
+  {
+    name: "Python",
+    src: Python.src,
+    variance: 0.95
+  },
+  {
+    name: "MongoDB",
+    src: MongoDB.src,
+    variance: 0.95
+  },
+  {
+    name: "Java",
+    src: Java.src,
+    variance: 0.8
+  },
+  {
+    name: "C++",
+    src: CPlusPlus.src,
+    variance: 0.88
+  },
+];
+
 export default function HomePage() {
   return (
     <main className="main">
@@ -35,6 +118,16 @@ export default function HomePage() {
           </div>
           <img src={Linkedin.src} className="logo" />
         </a>
+      </div>
+      <h2 className="noMargin">Technology.</h2>
+      <p className="subtext">Languages/Frameworks/Libraries I have used for software or web development.</p>
+      <div className="logoContainer">
+        {tech.map((val, ind) => (
+          <div>
+            <img width={defaultWidth * val.variance} src={val.src} />
+            <p className="subtext2">{val.name}</p>
+          </div>
+        ))}
       </div>
       <h2>Projects.</h2>
       <div className="container">
