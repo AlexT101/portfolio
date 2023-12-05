@@ -123,7 +123,7 @@ export default function HomePage() {
       <p className="subtext">Languages/Frameworks/Libraries I have used for software or web development.</p>
       <div className="logoContainer">
         {tech.map((val, ind) => (
-          <div>
+          <div key={ind}>
             <img width={defaultWidth * val.variance} src={val.src} />
             <p className="subtext2">{val.name}</p>
           </div>
@@ -135,7 +135,7 @@ export default function HomePage() {
         <Project type="immerse" title="ImmerseGT" role="Front-End" img={Immerse.src} href="/projects/immersegt" />
         <Project type="greenjournal" title="GreenJournal" role="Front-End" img={GreenJournal.src} href="/projects/greenjournal" />
       </div>
-      <h2>Doodles.</h2>
+      <h2>Concepts.</h2>
       <div className="container">
         <Project type="lifts" title="Lifts" role="UI/UX Mockup" img={Lifts.src} href="/projects/lifts" />
       </div>
