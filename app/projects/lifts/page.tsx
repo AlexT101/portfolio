@@ -28,6 +28,7 @@ const Lifts = () => {
                 </p>
                 <h2>Role</h2>
                 <p className="subtext">I was the sole designer for this project. I designed the mockups in Adobe Illustrator. I used an Adobe Photoshop mockup template to generate the image seen at the top. There is not currently a functional app, but I am planning on developing one in the future.</p>
+                <a href="/#concepts" className="link return">Back To Concepts</a>
             </div>
         </div>
     )

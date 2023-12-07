@@ -129,13 +129,13 @@ export default function HomePage() {
           </div>
         ))}
       </div>
-      <h2>Projects.</h2>
+      <h2 id="projects">Projects.</h2>
       <div className="container">
         <Project type="roam" title="Roam" role="Full-Stack" img={Roam.src} href="/projects/roam" />
         <Project type="immerse" title="ImmerseGT" role="Front-End" img={Immerse.src} href="/projects/immersegt" />
         <Project type="greenjournal" title="GreenJournal" role="Front-End" img={GreenJournal.src} href="/projects/greenjournal" />
       </div>
-      <h2>Concepts.</h2>
+      <h2 id="concepts">Concepts.</h2>
       <div className="container">
         <Project type="lifts" title="Lifts" role="UI/UX Mockup" img={Lifts.src} href="/projects/lifts" />
       </div>

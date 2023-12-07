@@ -10,10 +10,6 @@ body {
     color: rgb(255, 255, 255);
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 .main {
     padding: 50px;
     display: flex;
@@ -93,8 +89,6 @@ a {
     font-size: 1.2em;
     font-family: 'Roboto Mono';
     color: white;
-    text-decoration: none;
-    text-decoration-line: none;
     margin: 0;
 }
 
@@ -238,4 +232,15 @@ img.logo {
 
 .noMargin {
     margin-bottom: 0;
+}
+
+a.link.header {
+    text-decoration: none;
+    text-decoration-line: none;
+}
+
+a.link.return {
+    text-decoration-line: underline;
+    text-align: center;
+    margin-top: 20px;
 }

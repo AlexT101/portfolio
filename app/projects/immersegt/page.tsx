@@ -60,6 +60,7 @@ const Immerse = () => {
                     the time frame needed.I used React Redux and Redux Toolkit for state management due to the variety of pages/data the app
                     would have to work with.
                 </p>
+                <a href="/#projects" className="link return">Back To Projects</a>
             </div>
         </div>
     )

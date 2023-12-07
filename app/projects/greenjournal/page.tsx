@@ -55,6 +55,7 @@ const GreenJournal = () => {
                     the breakdown section that puts your data in context with that of other people. I also worked on the overall user interface / 
                     look of GreenJournal including working on the grid layout, designing the about page, and designing the logo.
                 </p>
+                <a href="/#projects" className="link return">Back To Projects</a>
             </div>
         </div>
     )
