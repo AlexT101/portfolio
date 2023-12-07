@@ -7,7 +7,7 @@ const Lifts = () => {
     return (
         <div className="article">
             <h1>Lifts.</h1>
-            <p>Currently a UI/UX mockup. Mobile app that lets bodybuilders and powerlifters track their fitness journey. Users can start a workout and log individual lifts, such as bench press or deadlift, to track their numbers and progress over time. 
+            <p>UI/UX mockup for a mobile app that lets bodybuilders and powerlifters track their fitness journey. Users can start a workout and log individual lifts, such as bench press or deadlift, to track their numbers and progress over time. 
             </p>
             <br />
             <br />
