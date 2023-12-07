@@ -5,6 +5,7 @@ import Roam from '../public/roam-before.png';
 import Immerse from '../public/immerse-before.png';
 import GreenJournal from '../public/greenjournal-before.png';
 import Lifts from '../public/lifts-before.png';
+import Valorant from '../public/valorant-before.png';
 
 import Linkedin from '../public/linkedin.png';
 import Github from '../public/github.png';
@@ -138,6 +139,7 @@ export default function HomePage() {
       <h2 id="concepts">Concepts.</h2>
       <div className="container">
         <Project type="lifts" title="Lifts" role="UI/UX Mockup" img={Lifts.src} href="/projects/lifts" />
+        <Project type="valorant" title="Agent" role="UI/UX Mockup" img={Valorant.src} href="/projects/valorant" />
       </div>
     </main >
   );

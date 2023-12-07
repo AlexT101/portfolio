@@ -154,6 +154,12 @@ a.link:hover {
     box-shadow: 0px 0px 20px 0px rgb(82, 82, 82);
 }
 
+.box.valorant:hover {
+    transform: translate(0, -5px);
+    background-color: rgb(10, 48, 170);
+    box-shadow: 0px 0px 20px 0px rgb(10, 48, 170);
+}
+
 
 .box.immerse:hover img,
 .box.greenjournal:hover img,
