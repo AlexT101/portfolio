@@ -135,6 +135,7 @@ export default function HomePage() {
         <Project type="roam" title="Roam" role="Full-Stack" img={Roam.src} href="/projects/roam" />
         <Project type="immerse" title="ImmerseGT" role="Front-End" img={Immerse.src} href="/projects/immersegt" />
         <Project type="greenjournal" title="GreenJournal" role="Front-End" img={GreenJournal.src} href="/projects/greenjournal" />
+        <Project type="robolobos" title="Robolobos" role="Graphic Design" img={GreenJournal.src} href="/projects/robolobos" />
       </div>
       <h2 id="concepts">Concepts.</h2>
       <div className="container">
