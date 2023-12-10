@@ -6,13 +6,13 @@ import LiftsFull from 'public/lifts.png';
 const Lifts = () => {
     return (
         <div className="article">
-            <h1>Lifts.</h1>
-            <p>UI/UX mockup for a mobile app that lets bodybuilders and powerlifters track their fitness journey. Users can start a workout and log individual lifts, such as bench press or deadlift, to track their numbers and progress over time. 
-            </p>
-            <br />
-            <br />
-            <img src={LiftsFull.src} className="largeImg" />
             <div className="content">
+                <div className="header">
+                    <h1>Lifts.</h1>
+                    <p>UI/UX mockup for a mobile app that lets bodybuilders and powerlifters track their fitness journey. Users can start a workout and log individual lifts, such as bench press or deadlift, to track their numbers and progress over time.
+                    </p>
+                </div>
+                <img src={LiftsFull.src} className="largeImg" />
                 <h2>About</h2>
                 <p className="subtext">
                     As someone who regularly goes to the gym, I have always wanted an easy solution for tracking my progress over time. Unfortunately, most apps are either difficult to use or are focused on tracking other fitness goals such as cardio, steps taken, or weight loss. I wanted to design an app targeted specifically to powerlifters.

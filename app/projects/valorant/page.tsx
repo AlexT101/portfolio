@@ -6,13 +6,13 @@ import ValorantFull from 'public/Sova.png';
 const Valorant = () => {
     return (
         <div className="article">
-            <h1>Agent.</h1>
-            <p>UI/UX mockup of an agent (playable character) information page for the game Valorant. Not affiliated with Riot/Valorant - this is my own work based on their design style. The current page displays information about Sova, an agent in the game.
-            </p>
-            <br />
-            <br />
-            <img src={ValorantFull.src} className="largeImg" />
             <div className="content">
+                <div className="header">
+                    <h1>Agent.</h1>
+                    <p>UI/UX mockup of an agent (playable character) information page for the game Valorant. Not affiliated with Riot/Valorant - this is my own work based on their design style. The current page displays information about Sova, an agent in the game.
+                    </p>
+                </div>
+                <img src={ValorantFull.src} className="largeImg" />
                 <h2>About</h2>
                 <p className="subtext">
                     I fell in love with Valorant's website design style as soon as I saw it - brutalist and utilitarian, yet clean and appealing, their design marked a welcome departure from the typical minimalist website on the internet. I decided to design a webpage in a similar style to practice implementing their aesthetic.

@@ -3,11 +3,29 @@
 import 'app/index.css';
 import Placeholder from 'public/placeholder.webp';
 
+import CardFront from 'public/businesscard.png';
+import CardBack from 'public/businesscardback.png';
+import Flyer1 from 'public/flyer.png';
+import Flyer2 from 'public/flyer2.png';
+import Flyer3 from 'public/IMG_5797.png';
+import Pins1 from 'public/pins1.png';
+import Pins2 from 'public/pins2.png';
+import Portfolio from 'public/portfolio.png';
+import Trifold1 from 'public/trifold-inside.png';
+import Trifold2 from 'public/trifold-outside.png';
+import Sponsor from 'public/sponsor-portfolio.png';
+
 const Robolobos = () => {
     return (
         <div className="article">
-            <h1>Robolobos.</h1>
             <div className="content">
+                <div className="header">
+                    <h1>Robolobos.</h1>
+                    <p>
+                        Branding and graphic design for a high school robotics team, the 14361 Robolobos, including a variety of print materials such as portfolios, flyers, brochures, business cards, etc.
+                    </p>
+                </div>
+                <img src={Flyer3.src} className="largeImg" />
                 <h2>About</h2>
                 <p className="subtext">
                     I was a member of the 14361 Robolobos robotics team in high school. Our team had 15 members, and we competed in the FIRST Tech Challenge,
@@ -20,44 +38,55 @@ const Robolobos = () => {
                 <p className="subtext">
                     Description goes here
                 </p>
-                <img src={Placeholder.src} className="largeImg" />
-                <br/>
+                <img src={Portfolio.src} className="largeImg" />
+                <br />
 
                 <h2>Flyers</h2>
                 <p className="subtext">
                     Description goes here
                 </p>
                 <div className="imageRow">
-                    <img src={Placeholder.src} className="largeImgRow" />
-                    <img src={Placeholder.src} className="largeImgRow" />
+                    <img src={Flyer1.src} className="largeImgRow" />
+                    <img src={Flyer2.src} className="largeImgRow" />
                 </div>
-                <br/>
-                <img src={Placeholder.src} className="largeImg" />
-                <br/>
+                <br />
 
                 <h2>Trifold Brochure</h2>
                 <p className="subtext">
                     Description goes here
                 </p>
-                <img src={Placeholder.src} className="largeImg" />
-                <br/>
+                <div className="imageRow">
+                    <img src={Trifold1.src} className="largeImgRow" />
+                    <img src={Trifold2.src} className="largeImgRow" />
+                </div>
+                <br />
 
                 <h2>Business Cards</h2>
                 <p className="subtext">
                     Description goes here
                 </p>
                 <div className="imageRow">
-                    <img src={Placeholder.src} className="largeImgRow" />
-                    <img src={Placeholder.src} className="largeImgRow" />
+                    <img src={CardFront.src} className="largeImgRow" />
+                    <img src={CardBack.src} className="largeImgRow" />
                 </div>
-                <br/>
+                <br />
+
+                <h2>Pins</h2>
+                <p className="subtext">
+                    Description goes here
+                </p>
+                <div className="imageRow">
+                    <img src={Pins1.src} className="largeImgRow" />
+                    <img src={Pins2.src} className="largeImgRow" />
+                </div>
+                <br />
 
                 <h2>Sponsorship Portfolio</h2>
                 <p className="subtext">
                     Description goes here
                 </p>
-                <img src={Placeholder.src} className="largeImg" />
-                <br/>
+                <img src={Sponsor.src} className="largeImg" />
+                <br />
 
                 <h2>Hoodies</h2>
                 <p className="subtext">

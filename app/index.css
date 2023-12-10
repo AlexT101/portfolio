@@ -230,8 +230,9 @@ img.logo {
 
 .content {
     width: 100%;
-    padding-left: 10vw;
-    padding-right: 10vw;
+    max-width: 1400px;
+    margin-left: 10vw;
+    margin-right: 10vw;
     text-align: left;
     display: flex;
     flex-direction: column;
@@ -262,7 +263,7 @@ img.logo {
     margin-bottom: 0;
 }
 
-a.link.header {
+a.link.navHeader {
     text-decoration: none;
     text-decoration-line: none;
 }
@@ -271,4 +272,9 @@ a.link.return {
     text-decoration-line: underline;
     text-align: center;
     margin-top: 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 40px;
 }
