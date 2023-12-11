@@ -14,6 +14,10 @@ import Portfolio from 'public/portfolio.png';
 import Trifold1 from 'public/trifold-inside.png';
 import Trifold2 from 'public/trifold-outside.png';
 import Sponsor from 'public/sponsor-portfolio.png';
+import Hoodie1 from 'public/Front.png';
+import Hoodie2 from 'public/Back.png';
+import Shirt1 from 'public/ShirtFront.png';
+import Shirt2 from 'public/ShirtBack.png';
 
 const Robolobos = () => {
     return (
@@ -93,10 +97,18 @@ const Robolobos = () => {
                     Description goes here
                 </p>
                 <div className="imageRow">
-                    <img src={Placeholder.src} className="largeImgRow" />
-                    <img src={Placeholder.src} className="largeImgRow" />
+                    <img src={Hoodie1.src} className="largeImgRow" />
+                    <img src={Hoodie2.src} className="largeImgRow" />
                 </div>
 
+                <h2>Shirts</h2>
+                <p className="subtext">
+                    Description goes here
+                </p>
+                <div className="imageRow">
+                    <img src={Shirt1.src} className="largeImgRow" />
+                    <img src={Shirt2.src} className="largeImgRow" />
+                </div>
 
                 <br />
                 <h2>Tech Used</h2>
