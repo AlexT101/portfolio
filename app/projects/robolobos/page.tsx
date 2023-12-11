@@ -5,6 +5,8 @@ import Placeholder from 'public/placeholder.webp';
 
 import CardFront from 'public/businesscard.png';
 import CardBack from 'public/businesscardback.png';
+import Card3 from 'public/CardInvite.png';
+import Card4 from 'public/CardPersonalized.png';
 import Flyer1 from 'public/flyer.png';
 import Flyer2 from 'public/flyer2.png';
 import Flyer3 from 'public/IMG_5797.png';
@@ -29,85 +31,147 @@ const Robolobos = () => {
                         Branding and graphic design for a high school robotics team, the 14361 Robolobos, including a variety of print materials such as portfolios, flyers, brochures, business cards, etc.
                     </p>
                 </div>
-                <img src={Flyer3.src} className="largeImg" />
+                <div className="singleImageRow" >
+                    <img src={Flyer3.src} className="image" />
+                    <p>Printed handouts at a FIRST Robotics competition</p>
+                </div>
                 <h2>About</h2>
                 <p className="subtext">
                     I was a member of the 14361 Robolobos robotics team in high school. Our team had 15 members, and we competed in the FIRST Tech Challenge,
                     which involved building a robot to complete an objective - for the year I participated, this involved maneuvering a robot throughout a field
-                    and stacking cones on various junction elements. Part of the competition involved submission of a 16-page engineering portfolio. Additionally,
+                    and stacking cones on various junction elements. Part of the competition involved submission of an engineering portfolio. Additionally,
                     I had to create a variety of print materials such as flyers and business cards, which we used to help with our outreach efforts and handed
                     out at competitions.
                 </p>
                 <h2>Engineering Portfolio</h2>
                 <p className="subtext">
-                    Description goes here
+                    16-page report detailing the engineering design process and mechanics of our team's robot. Created according to FIRST Robotics specifications and submitted at competitions as part of the judging process. Our team won several awards
+                    based on our robot's design as written up in the engineering portfolio including the Control Award at the FTC State Championship, the Innovate Award at the TX-Central Regional Championship, and the Innovate Award at the TX-Central GEMS League Tournament.
                 </p>
-                <img src={Portfolio.src} className="largeImg" />
-                <br />
+                <div className="singleImageRow" >
+                <img src={Portfolio.src} className="image" />
+                <p>Engineering Portfolio Content and Cover</p>
+            </div>
+            <br />
 
-                <h2>Flyers</h2>
-                <p className="subtext">
-                    Description goes here
-                </p>
-                <div className="imageRow">
-                    <img src={Flyer1.src} className="largeImgRow" />
-                    <img src={Flyer2.src} className="largeImgRow" />
-                </div>
+            <h2>Flyers</h2>
+            <p className="subtext">
+                Our flyers were created to be handed out at outreach events and robotics competitions so that other people could remember our team and robot. Our first flyer design redirected to our team's Instagram, which gained over 900 followers in a few months.
+                Our other flyer design included information about our team and awards as a memento for judges and potential sponsors to remember our team by.
+            </p>
+            <div className="imageRow">
+            <div className="largeImgRow" >
+                <img src={Flyer1.src} className="image" />
+                <p>Flyer Design 1 (Front and Back)</p>
+            </div>
+            <div className="largeImgRow" >
+            <img src={Flyer2.src} className="image" />
+            <p>Flyer Design 2 (Front Only)</p>
+        </div>
+                </div >
                 <br />
 
                 <h2>Trifold Brochure</h2>
                 <p className="subtext">
-                    Description goes here
+                    Our trifold brochure was another printed material designed to be handed out at outreach events and competitions. The brochure contained much more detailed information than the flyers and was designed for people who were interested in learning about
+                    how our team functioned and how our robot worked.
                 </p>
                 <div className="imageRow">
-                    <img src={Trifold1.src} className="largeImgRow" />
-                    <img src={Trifold2.src} className="largeImgRow" />
+                    <div className="largeImgRow" >
+                        <img src={Trifold1.src} className="image" />
+                        <p>Brochure Inside and Folded</p>
+                    </div>
+                    <div className="largeImgRow" >
+                        <img src={Trifold2.src} className="image" />
+                        <p>Brochure Outside</p>
+                    </div>
                 </div>
                 <br />
 
                 <h2>Business Cards</h2>
                 <p className="subtext">
-                    Description goes here
+                    At every FIRST Robotics event, each top team must select two other teams to work with as part of an "alliance" in a multiplayer format. In this format, robots from different teams have to work together to accomplish an objective. We handed out gold foil business
+                    cards to teams we talked with so that they would have a positive impression on our team and be more likely to join our alliance. Before the competition, we printed out several business cards with the ID numbers of specific teams we wanted to partner with to
+                    lend a personal touch. We also designed cards with a message inviting teams to join our alliance.
                 </p>
                 <div className="imageRow">
-                    <img src={CardFront.src} className="largeImgRow" />
-                    <img src={CardBack.src} className="largeImgRow" />
+                    <div className="largeImgRow" >
+                        <img src={CardFront.src} className="image" />
+                        <p>Business Card Front</p>
+                    </div>
+                    <div className="largeImgRow" >
+                        <img src={CardBack.src} className="image" />
+                        <p>Business Card Back</p>
+                    </div>
+                </div>
+                <br />
+                <div className="imageRow">
+                    <div className="largeImgRow" >
+                        <img src={Card4.src} className="image" />
+                        <p>Personalized Business Card Back</p>
+                    </div>
+                    <div className="largeImgRow" >
+                        <img src={Card3.src} className="image" />
+                        <p>Alliance Invite Business Card Back</p>
+                    </div>
                 </div>
                 <br />
 
                 <h2>Pins</h2>
                 <p className="subtext">
-                    Description goes here
+                    We designed and ordered a variety of pins to hand out as fun trinkets at robotics events. These pins ended up not only being worn by our own team members, but also by participants from other teams who had networked with our team.
                 </p>
                 <div className="imageRow">
-                    <img src={Pins1.src} className="largeImgRow" />
-                    <img src={Pins2.src} className="largeImgRow" />
+                    <div className="largeImgRow" >
+                    <img src={Pins1.src} className="image" />
+                    <p>Logo and Robot Pins</p>
+                    </div>
+                    <div className="largeImgRow" >
+                    <img src={Pins2.src} className="image" />
+                    <p>Text and Medal Pins</p>
+                    </div>
                 </div>
                 <br />
 
                 <h2>Sponsorship Portfolio</h2>
                 <p className="subtext">
-                    Description goes here
+                    Running a robots team isn't cheap; our team incurred many expenses each year, including the costs for buying materials, registering our team with FIRST Robotics, purchasing promotional materials, paying the printing costs for our handouts, and paying
+                    travel expenses for going to each competition. We sent a 10-page sponsorship portfolio to potential sponsors to provide information about our team, need for sponsors, and possible sponsor benefits.
                 </p>
-                <img src={Sponsor.src} className="largeImg" />
+                <div className="singleImageRow" >
+                <img src={Sponsor.src} className="image" />
+                <p>Sponsorship Portfolio Contents</p>
+                    </div>
                 <br />
 
                 <h2>Hoodies</h2>
                 <p className="subtext">
-                    Description goes here
+                    We ordered hoodies for every team member from CustomInk to wear at the FTC World competition. I designed a wireframe mockup of our robot to use on the back since our Fusion360 rendered mockup was too finely detailed to be printed.
                 </p>
                 <div className="imageRow">
-                    <img src={Hoodie1.src} className="largeImgRow" />
-                    <img src={Hoodie2.src} className="largeImgRow" />
+                    <div className="largeImgRow" >
+                    <img src={Hoodie1.src} className="image" />
+                    <p>Hoodie Front</p>
+                    </div>
+                    <div className="largeImgRow" >
+                    <img src={Hoodie2.src} className="image" />
+                    <p>Hoodie Back</p>
+                    </div>
                 </div>
 
                 <h2>Shirts</h2>
                 <p className="subtext">
-                    Description goes here
+                    We designed black shirts (to contrast with the white hoodies) to wear at the FTC World competition. Another team member designed the unique wolf icon used on the front, and I laid out the team and sponsor information on the back.
                 </p>
                 <div className="imageRow">
-                    <img src={Shirt1.src} className="largeImgRow" />
-                    <img src={Shirt2.src} className="largeImgRow" />
+                    <div className="largeImgRow" >
+                    <img src={Shirt1.src} className="image" />
+                    <p>Shirt Front</p>
+                    </div>
+                    <div className="largeImgRow" >
+                    <img src={Shirt2.src} className="image" />
+                    <p>Shirt Back</p>
+                    </div>
                 </div>
 
                 <br />
@@ -129,8 +193,8 @@ const Robolobos = () => {
                     the printed materials as seen in the previous photos.
                 </p>
                 <a href="/#projects" className="link return">Back To Projects</a>
-            </div>
-        </div>
+            </div >
+        </div >
     )
 }
 

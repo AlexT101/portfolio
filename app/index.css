@@ -217,8 +217,18 @@ img.logo {
 .largeImgRow {
     width: 100px;
     flex-grow: 1;
+    text-align: center;
+}
+
+.singleImageRow {
+    text-align: center;
+    width: 100%;
+}
+
+.image {
     border: 1px solid white;
     border-radius: 25px;
+    width: 100%;
 }
 
 .largeImg {
