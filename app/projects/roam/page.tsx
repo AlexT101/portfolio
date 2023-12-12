@@ -2,6 +2,7 @@
 
 import 'app/index.css';
 import RoamFull from 'public/roam.png';
+import Image from 'components/Image';
 
 const Roam = () => {
     return (
@@ -12,7 +13,7 @@ const Roam = () => {
                     <p>Log your travel experiences through pins on an interactive globe. Add locations to your travel history with notes to remember your journey, or plan your future adventures with a wishlist feature.
                     </p>
                 </div>
-                <img src={RoamFull.src} className="largeImg" />
+                <Image src={RoamFull.src} />
                 <h2>About</h2>
                 <p className="subtext">
                     Roam was built as part of a semester-long project team as part of the Web Development Club at Georgia Tech. Our goal was to create

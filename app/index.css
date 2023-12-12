@@ -215,21 +215,25 @@ img.logo {
 }
 
 .largeImgRow {
-    width: 100px;
-    flex-grow: 1;
-    text-align: center;
-}
-
-.singleImageRow {
-    text-align: center;
     width: 100%;
+    text-align: center;
+    position: relative;
 }
 
 .image {
-    border: 1px solid white;
     border-radius: 25px;
     width: 100%;
+    transition: 0.3s;
 }
+
+/**
+.image:hover {
+    filter: brightness(0.6);
+    cursor: pointer;
+    transform: scale(1.02);
+
+}
+*/
 
 .largeImg {
     width: 100%;
@@ -239,10 +243,8 @@ img.logo {
 }
 
 .content {
-    width: 100%;
+    width: 70vw;
     max-width: 1400px;
-    margin-left: 10vw;
-    margin-right: 10vw;
     text-align: left;
     display: flex;
     flex-direction: column;

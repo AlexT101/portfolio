@@ -2,6 +2,7 @@
 
 import 'app/index.css';
 import GreenJournalFull from 'public/greenjournal.png';
+import Image from 'components/Image';
 
 const GreenJournal = () => {
     return (
@@ -12,7 +13,7 @@ const GreenJournal = () => {
                     <p>Interactive dashboard that lets you monitor your carbon footprint through tracked behavioral data and statistical analysis. Based on data from the Environmental Protection Agency.
                     </p>
                 </div>
-                <img src={GreenJournalFull.src} className="largeImg" />
+                <Image src={GreenJournalFull.src} />
                 <h2>About</h2>
                 <p className="subtext">
                     GreenJournal was built in 36 hours as part of HackGT X, a hackathon hosted by Georgia Tech.

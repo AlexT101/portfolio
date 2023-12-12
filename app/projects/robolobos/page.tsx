@@ -1,7 +1,8 @@
 'use client';
 
 import 'app/index.css';
-import Placeholder from 'public/placeholder.webp';
+
+import Image from 'components/Image';
 
 import CardFront from 'public/businesscard.png';
 import CardBack from 'public/businesscardback.png';
@@ -31,10 +32,8 @@ const Robolobos = () => {
                         Branding and graphic design for a high school robotics team, the 14361 Robolobos, including a variety of print materials such as portfolios, flyers, brochures, business cards, etc.
                     </p>
                 </div>
-                <div className="singleImageRow" >
-                    <img src={Flyer3.src} className="image" />
-                    <p>Printed handouts at a FIRST Robotics competition</p>
-                </div>
+                <Image src={Flyer3.src} subtitle="Printed handouts at a FIRST Robotics competition" />
+
                 <h2>About</h2>
                 <p className="subtext">
                     I was a member of the 14361 Robolobos robotics team in high school. Our team had 15 members, and we competed in the FIRST Tech Challenge,
@@ -48,26 +47,17 @@ const Robolobos = () => {
                     16-page report detailing the engineering design process and mechanics of our team's robot. Created according to FIRST Robotics specifications and submitted at competitions as part of the judging process. Our team won several awards
                     based on our robot's design as written up in the engineering portfolio including the Control Award at the FTC State Championship, the Innovate Award at the TX-Central Regional Championship, and the Innovate Award at the TX-Central GEMS League Tournament.
                 </p>
-                <div className="singleImageRow" >
-                <img src={Portfolio.src} className="image" />
-                <p>Engineering Portfolio Content and Cover</p>
-            </div>
-            <br />
+                <Image src={Portfolio.src} subtitle="Engineering Portfolio Content and Cover" />
+                <br />
 
-            <h2>Flyers</h2>
-            <p className="subtext">
-                Our flyers were created to be handed out at outreach events and robotics competitions so that other people could remember our team and robot. Our first flyer design redirected to our team's Instagram, which gained over 900 followers in a few months.
-                Our other flyer design included information about our team and awards as a memento for judges and potential sponsors to remember our team by.
-            </p>
-            <div className="imageRow">
-            <div className="largeImgRow" >
-                <img src={Flyer1.src} className="image" />
-                <p>Flyer Design 1 (Front and Back)</p>
-            </div>
-            <div className="largeImgRow" >
-            <img src={Flyer2.src} className="image" />
-            <p>Flyer Design 2 (Front Only)</p>
-        </div>
+                <h2>Flyers</h2>
+                <p className="subtext">
+                    Our flyers were created to be handed out at outreach events and robotics competitions so that other people could remember our team and robot. Our first flyer design redirected to our team's Instagram, which gained over 900 followers in a few months.
+                    Our other flyer design included information about our team and awards as a memento for judges and potential sponsors to remember our team by.
+                </p>
+                <div className="imageRow">
+                    <Image src={Flyer1.src} subtitle="Flyer Design 1 (Front and Back)" />
+                    <Image src={Flyer2.src} subtitle="Flyer Design 2 (Front Only)" />
                 </div >
                 <br />
 
@@ -77,14 +67,8 @@ const Robolobos = () => {
                     how our team functioned and how our robot worked.
                 </p>
                 <div className="imageRow">
-                    <div className="largeImgRow" >
-                        <img src={Trifold1.src} className="image" />
-                        <p>Brochure Inside and Folded</p>
-                    </div>
-                    <div className="largeImgRow" >
-                        <img src={Trifold2.src} className="image" />
-                        <p>Brochure Outside</p>
-                    </div>
+                    <Image src={Trifold1.src} subtitle="Brochure Inside and Folded" />
+                    <Image src={Trifold2.src} subtitle="Brochure Outside" />
                 </div>
                 <br />
 
@@ -95,25 +79,13 @@ const Robolobos = () => {
                     lend a personal touch. We also designed cards with a message inviting teams to join our alliance.
                 </p>
                 <div className="imageRow">
-                    <div className="largeImgRow" >
-                        <img src={CardFront.src} className="image" />
-                        <p>Business Card Front</p>
-                    </div>
-                    <div className="largeImgRow" >
-                        <img src={CardBack.src} className="image" />
-                        <p>Business Card Back</p>
-                    </div>
+                    <Image src={CardFront.src} subtitle="Business Card Front" />
+                    <Image src={CardBack.src} subtitle="Business Card Back" />
                 </div>
                 <br />
                 <div className="imageRow">
-                    <div className="largeImgRow" >
-                        <img src={Card4.src} className="image" />
-                        <p>Personalized Business Card Back</p>
-                    </div>
-                    <div className="largeImgRow" >
-                        <img src={Card3.src} className="image" />
-                        <p>Alliance Invite Business Card Back</p>
-                    </div>
+                    <Image src={Card4.src} subtitle="Personalized Business Card Back" />
+                    <Image src={Card3.src} subtitle="Alliance Invite Business Card Back" />
                 </div>
                 <br />
 
@@ -122,14 +94,8 @@ const Robolobos = () => {
                     We designed and ordered a variety of pins to hand out as fun trinkets at robotics events. These pins ended up not only being worn by our own team members, but also by participants from other teams who had networked with our team.
                 </p>
                 <div className="imageRow">
-                    <div className="largeImgRow" >
-                    <img src={Pins1.src} className="image" />
-                    <p>Logo and Robot Pins</p>
-                    </div>
-                    <div className="largeImgRow" >
-                    <img src={Pins2.src} className="image" />
-                    <p>Text and Medal Pins</p>
-                    </div>
+                    <Image src={Pins1.src} subtitle="Logo and Robot Pins" />
+                    <Image src={Pins2.src} subtitle="Text and Medal Pins" />
                 </div>
                 <br />
 
@@ -138,10 +104,7 @@ const Robolobos = () => {
                     Running a robots team isn't cheap; our team incurred many expenses each year, including the costs for buying materials, registering our team with FIRST Robotics, purchasing promotional materials, paying the printing costs for our handouts, and paying
                     travel expenses for going to each competition. We sent a 10-page sponsorship portfolio to potential sponsors to provide information about our team, need for sponsors, and possible sponsor benefits.
                 </p>
-                <div className="singleImageRow" >
-                <img src={Sponsor.src} className="image" />
-                <p>Sponsorship Portfolio Contents</p>
-                    </div>
+                <Image src={Sponsor.src} subtitle="Sponsorship Portfolio Contents" />
                 <br />
 
                 <h2>Hoodies</h2>
@@ -149,14 +112,8 @@ const Robolobos = () => {
                     We ordered hoodies for every team member from CustomInk to wear at the FTC World competition. I designed a wireframe mockup of our robot to use on the back since our Fusion360 rendered mockup was too finely detailed to be printed.
                 </p>
                 <div className="imageRow">
-                    <div className="largeImgRow" >
-                    <img src={Hoodie1.src} className="image" />
-                    <p>Hoodie Front</p>
-                    </div>
-                    <div className="largeImgRow" >
-                    <img src={Hoodie2.src} className="image" />
-                    <p>Hoodie Back</p>
-                    </div>
+                    <Image src={Hoodie1.src} subtitle="Hoodie Front" />
+                    <Image src={Hoodie2.src} subtitle="Hoodie Back" />
                 </div>
 
                 <h2>Shirts</h2>
@@ -164,14 +121,8 @@ const Robolobos = () => {
                     We designed black shirts (to contrast with the white hoodies) to wear at the FTC World competition. Another team member designed the unique wolf icon used on the front, and I laid out the team and sponsor information on the back.
                 </p>
                 <div className="imageRow">
-                    <div className="largeImgRow" >
-                    <img src={Shirt1.src} className="image" />
-                    <p>Shirt Front</p>
-                    </div>
-                    <div className="largeImgRow" >
-                    <img src={Shirt2.src} className="image" />
-                    <p>Shirt Back</p>
-                    </div>
+                    <Image src={Shirt1.src} subtitle="Shirt Front" />
+                    <Image src={Shirt2.src} subtitle="Shirt Back" />
                 </div>
 
                 <br />

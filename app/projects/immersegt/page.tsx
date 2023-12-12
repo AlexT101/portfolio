@@ -2,6 +2,7 @@
 
 import 'app/index.css';
 import ImmerseGTFull from 'public/immersegt.png';
+import Image from 'components/Image';
 
 const Immerse = () => {
     return (
@@ -12,7 +13,7 @@ const Immerse = () => {
                     <p>Online event platform for the 2024 ImmerseGT Hackathon. Allows participants to register for the hackathon, search for other participants, form teams, and view an up-to-date schedule of the event.
                     </p>
                 </div>
-                <img src={ImmerseGTFull.src} className="largeImg" />
+                <Image src={ImmerseGTFull.src} />
                 <h2>About</h2>
                 <p className="subtext">
                     ImmerseGT is a hackathon hosted by the GTXR club and Startup Exchange at Georgia Tech. Participants can enter into various
