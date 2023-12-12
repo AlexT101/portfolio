@@ -28,15 +28,15 @@ body {
 
 @keyframes slide-down {
     0% {
-      transform: translateY(-5vh);
-      opacity: 0;
+        transform: translateY(-5vh);
+        opacity: 0;
     }
-  
+
     100% {
-      transform: translateX(0);
-      opacity: 1;
+        transform: translateX(0);
+        opacity: 1;
     }
-  }
+}
 
 .box {
     max-width: 350px;
@@ -76,7 +76,8 @@ h2 {
     font-family: 'Roboto Mono';
 }
 
-p, li {
+p,
+li {
     font-size: 1.2em;
     font-family: 'Roboto Mono';
 }
@@ -97,7 +98,7 @@ a.link:hover {
     height: 60px;
     display: flex;
     justify-content: center;
-    
+
 }
 
 .navbarContainer {
@@ -197,11 +198,16 @@ img.logo {
 .article {
     display: flex;
     flex-direction: column;
-    padding-top: 30px;
+    width: 100%;
+    max-width: 1400px;
     padding-left: 10vw;
     padding-right: 10vw;
-    align-items: center;
-    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    box-sizing: border-box;
 }
 
 .imageRow {
@@ -240,20 +246,11 @@ img.logo {
     color: rgb(200, 201, 202);
 }
 
-.content {
-    width: 70vw;
-    max-width: 1400px;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    margin-top: 30px;
-    margin-bottom: 50px;
-}
-
 .subtext {
     color: rgb(200, 201, 202);
     margin-top: 0px;
 }
+
 .subtext2 {
     color: rgb(200, 201, 202);
     margin-top: 0.5em;

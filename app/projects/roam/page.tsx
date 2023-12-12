@@ -2,19 +2,23 @@
 
 import 'app/index.css';
 import RoamFull from 'public/roam.png';
+
 import Image from 'components/Image';
+import Section from 'components/Section';
+import Header from 'components/Header';
+import Return from 'components/Return';
 
 const Roam = () => {
     return (
-        <div className="article">
-            <div className="content">
-                <div className="header">
-                    <h1>Roam.</h1>
-                    <p>Log your travel experiences through pins on an interactive globe. Add locations to your travel history with notes to remember your journey, or plan your future adventures with a wishlist feature.
-                    </p>
-                </div>
-                <Image src={RoamFull.src} />
-                <h2>About</h2>
+        <article className="article">
+            <Header
+                title="Roam."
+                description="Log your travel experiences through pins on an interactive globe. Add locations to your travel history with notes to remember your journey, or plan your future adventures with a wishlist feature."
+                src={RoamFull.src}
+                subtitle=""
+            />
+
+            <Section title="About">
                 <p className="subtext">
                     Roam was built as part of a semester-long project team as part of the Web Development Club at Georgia Tech. Our goal was to create
                     an app that could be used for logging travel in a more interactive way. Using the React-Globe.gl library let us convert
@@ -26,7 +30,9 @@ const Roam = () => {
                 <br />
                 <p className="subtext">Github Link: <a className="link" href="https://github.com/michelle692/roam">https://github.com/michelle692/roam</a></p>
                 <p className="subtext">Website Link: <a className="link" href="https://roam-the-world.vercel.app/">https://roam-the-world.vercel.app/</a></p>
-                <h2>Tech Used</h2>
+            </Section>
+
+            <Section title="Tech Used">
                 <p>Front-End</p>
                 <ul>
                     <li>React</li>
@@ -42,14 +48,19 @@ const Roam = () => {
                     <li>Google Maps Geocoding API</li>
                     <li>Vercel</li>
                 </ul>
-                <h2>Approach</h2>
+            </Section>
+
+
+            <Section title="Approach">
                 <p className="subtext">
                     We were able to add user authentication and persistent data storage by having a backend to interface between the frontend and our MongoDB
                     database. Upon account login, all of the user's locations are loaded into a React hook, and any update to this hook is saved to local storage.
                     We are able to get location data using the Google Maps Geocoding API, which generates possible locations based on user input and finds their
                     latitude/longitude.
                 </p>
-                <h2>Role</h2>
+            </Section>
+
+            <Section title="Role">
                 <p className="subtext">I worked as part of a team as a full-stack developer.</p>
                 <p className="subtext">Front-End</p>
                 <p className="subtext">
@@ -65,9 +76,10 @@ const Roam = () => {
                     I wrote the calls for CRUD functionality with the travel history and wishlist documents. This included functions for adding
                     a location, getting all locations for a particular user, editing a location, and deleting a location.
                 </p>
-                <a href="/#projects" className="link return">Back To Projects</a>
-            </div>
-        </div>
+            </Section>
+
+            <Return />
+        </article>
     )
 }
 
