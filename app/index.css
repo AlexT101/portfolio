@@ -81,10 +81,6 @@ p, li {
     font-family: 'Roboto Mono';
 }
 
-li {
-    color: rgb(200, 201, 202);
-}
-
 a {
     font-size: 1.2em;
     font-family: 'Roboto Mono';
@@ -221,6 +217,7 @@ img.logo {
 }
 
 .image {
+    border: 1px solid white;
     border-radius: 25px;
     width: 100%;
     transition: 0.3s;
@@ -235,11 +232,12 @@ img.logo {
 }
 */
 
-.largeImg {
-    width: 100%;
-    flex-grow: 1;
-    border: 1px solid white;
-    border-radius: 25px;
+.sectionTitle {
+    color: rgb(255, 255, 255);
+}
+
+.sectionContent {
+    color: rgb(200, 201, 202);
 }
 
 .content {
