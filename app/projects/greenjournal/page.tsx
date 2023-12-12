@@ -15,7 +15,8 @@ const GreenJournal = () => {
                 title="GreenJournal."
                 description="Interactive dashboard that lets you monitor your carbon footprint through tracked behavioral data and statistical analysis. Based on data from the Environmental Protection Agency."
                 src={GreenJournalFull.src}
-                subtitle=""
+                alt="Screenshot of the GreenJournal website with a bento box layout, including individual panels for an Earth display, carbon footprint comparison, carbon footprint measurement, graph of user history, input questions and fields, and notes"
+                subtitle="Screenshot of the GreenJournal Website"
             />
 
             <Section title="About">

@@ -15,7 +15,8 @@ const Lifts = () => {
                 title="Lifts."
                 description="UI/UX mockup for a mobile app that lets bodybuilders and powerlifters track their fitness journey. Users can start a workout and log individual lifts, such as bench press or deadlift, to track their numbers and progress over time."
                 src={LiftsFull.src}
-                subtitle=""
+                alt="Mockup showing three phones side-by-side with three different screens from the Lift app, including the welcome screen, home screen, and lift tracker screen (from left to right)"
+                subtitle="Mockup of the Lifts App"
             />
 
             <Section title="About">

@@ -15,7 +15,8 @@ const Immerse = () => {
                 title="ImmerseGT Event Platform."
                 description="Online event platform for the 2024 ImmerseGT Hackathon. Allows participants to register for the hackathon, search for other participants, form teams, and view an up-to-date schedule of the event."
                 src={ImmerseGTFull.src}
-                subtitle=""
+                alt="Screenshot of the ImmerseGT website with the message 'Hack with us at ImmerseGT', a description, registration buttons, and a picture of a VR headset"
+                subtitle="Screenshot of the ImmerseGT Website"
             />
 
             <Section title="About">

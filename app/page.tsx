@@ -1,17 +1,23 @@
 'use client';
 
 import './index.css';
+
+
+//Project component for the project cards
+import Project from '../components/Project';
+
+//Wireframe images for the project cards
 import Roam from '../public/roam-before.png';
 import Immerse from '../public/immerse-before.png';
 import GreenJournal from '../public/greenjournal-before.png';
 import Lifts from '../public/lifts-before.png';
 import Valorant from '../public/valorant-before.png';
 
+//Social icons for the links
 import Linkedin from '../public/linkedin.png';
 import Github from '../public/github.png';
 
-import Project from '../components/Project';
-
+//Tech icons
 import React from '../public/Logo1.svg';
 import HTML from '../public/Logo2.svg';
 import CSS from '../public/Logo3.svg';
@@ -26,7 +32,10 @@ import Figma from '../public/Logo11.svg';
 import Java from '../public/Logo12.svg';
 import CPlusPlus from '../public/Logo13.svg';
 
+//Default size of the tech icons
 const defaultWidth = 90;
+
+//Array of tech icon information including name, image, and size
 const tech = [
   {
     name: "React",
