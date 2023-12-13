@@ -10,6 +10,7 @@ import Project from '../components/Project';
 import Roam from '../public/roam-before.png';
 import Immerse from '../public/immerse-before.png';
 import GreenJournal from '../public/greenjournal-before.png';
+import Robolobos from '../public/Whiteframe.png';
 import Lifts from '../public/lifts-before.png';
 import Valorant from '../public/valorant-before.png';
 
@@ -33,7 +34,7 @@ import Java from '../public/Logo12.svg';
 import CPlusPlus from '../public/Logo13.svg';
 
 //Default size of the tech icons
-const defaultWidth = 90;
+const defaultWidth = 80;
 
 //Array of tech icon information including name, image, and size
 const tech = [
@@ -107,49 +108,68 @@ const tech = [
 export default function HomePage() {
   return (
     <main className="main">
-      <h2>About.</h2>
+      <div className="group">
+        <div className="info">
+          <h2 id="projects">About.</h2>
+          <p className="subtext">Information about me and links to my accounts.</p>
+        </div>
       <div className="container">
-        <a className="box github" href="https://github.com/AlexT101" target="_blank" rel="noopener noreferrer">
-          <div className="boxHeader">
-            <p>Github</p>
-            <p>@alext101</p>
-          </div>
-          <img src={Github.src} className="logo" />
-        </a>
         <div className="box center about">
           <p>Hi, I’m Alex Thummalapalli.</p>
           <p>I’m majoring in computer science at the Georgia Institute of Technology. I enjoy building websites by combining the intricacies of front-end development with the artistry of UI/UX design.
           </p>
         </div>
-        <a className="box linkedin" href="https://www.linkedin.com/in/alext101/" target="_blank" rel="noopener noreferrer">
+        <a className="box github mini" href="https://github.com/AlexT101" target="_blank" rel="noopener noreferrer">
+          <div className="boxHeader">
+            <p>Github</p>
+          </div>
+          <img src={Github.src} className="logo" />
+        </a>
+        <a className="box linkedin mini" href="https://www.linkedin.com/in/alext101/" target="_blank" rel="noopener noreferrer">
           <div className="boxHeader">
             <p>Linkedin</p>
-            <p>@alext101</p>
           </div>
           <img src={Linkedin.src} className="logo" />
         </a>
       </div>
-      <h2 className="noMargin">Technology.</h2>
-      <p className="subtext">Languages/Frameworks/Libraries I have used for software or web development.</p>
-      <div className="logoContainer">
-        {tech.map((val, ind) => (
-          <div key={ind}>
-            <img width={defaultWidth * val.variance} src={val.src} />
-            <p className="subtext2">{val.name}</p>
-          </div>
-        ))}
       </div>
-      <h2 id="projects">Projects.</h2>
-      <div className="container">
-        <Project type="roam" title="Roam" role="Full-Stack" img={Roam.src} href="/projects/roam" />
-        <Project type="immerse" title="ImmerseGT" role="Front-End" img={Immerse.src} href="/projects/immersegt" />
-        <Project type="greenjournal" title="GreenJournal" role="Front-End" img={GreenJournal.src} href="/projects/greenjournal" />
-        <Project type="robolobos" title="Robolobos" role="Graphic Design" img={GreenJournal.src} href="/projects/robolobos" />
+
+
+      <div className="group">
+        <div className="info">
+          <h2 className="noMargin">Technology.</h2>
+          <p className="subtext">Languages, frameworks, and libraries I use for software or web development.</p>
+        </div>
+        <div className="logoContainer">
+          {tech.map((val, ind) => (
+            <div key={ind}>
+              <img width={defaultWidth * val.variance} src={val.src} />
+              <p className="subtext2">{val.name}</p>
+            </div>
+          ))}
+        </div>
       </div>
-      <h2 id="concepts">Concepts.</h2>
-      <div className="container">
-        <Project type="lifts" title="Lifts" role="UI/UX Mockup" img={Lifts.src} href="/projects/lifts" />
-        <Project type="valorant" title="Agent" role="UI/UX Mockup" img={Valorant.src} href="/projects/valorant" />
+      <div className="group">
+        <div className="info">
+          <h2 id="projects">Projects.</h2>
+          <p className="subtext">Stuff I've been working on. Mostly in React.</p>
+        </div>
+        <div className="container">
+          <Project type="roam" title="Roam" role="Full-Stack" img={Roam.src} href="/projects/roam" />
+          <Project type="immerse" title="ImmerseGT" role="Front-End" img={Immerse.src} href="/projects/immersegt" />
+          <Project type="greenjournal" title="GreenJournal" role="Front-End" img={GreenJournal.src} href="/projects/greenjournal" />
+          <Project type="robolobos" title="Robolobos" role="Design" img={Robolobos.src} href="/projects/robolobos" />
+        </div>
+      </div>
+      <div className="group">
+        <div className="info">
+          <h2 id="projects">Concepts.</h2>
+          <p className="subtext">UI/UX design concepts made in Adobe Illustrator.</p>
+        </div>
+        <div className="container">
+          <Project type="lifts" title="Lifts" role="UI/UX Mockup" img={Lifts.src} href="/projects/lifts" />
+          <Project type="valorant" title="Agent" role="UI/UX Mockup" img={Valorant.src} href="/projects/valorant" />
+        </div>
       </div>
     </main >
   );

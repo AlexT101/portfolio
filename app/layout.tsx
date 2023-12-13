@@ -1,6 +1,7 @@
 import React from "react";
 import './index.css';
 import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 export const metadata = {
   title: "AlexT",
@@ -19,8 +20,9 @@ export default function RootLayout({ children }: { children: any }) {
         />
       </head>
       <body>
-      <Navbar/>
+        <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
