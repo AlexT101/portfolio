@@ -16,16 +16,16 @@ interface ProjectProps {
 
 const Project = ({ type, title, role, img, href, offset }: ProjectProps) => {
 
-    useEffect(() => {
-        AOS.init();
-    }, []);
+    AOS.init({
+        disable: 'mobile',
+      });
 
     return (
         <div data-aos="fade-up" data-aos-easing="ease-sine" data-aos-anchor-placement="center-bottom" data-aos-once="true" data-aos-delay={offset}>
             <a className={"box " + type} href={href}>
                 <div className="boxHeader">
                     <p>{title}</p>
-                    <p>{role}</p>
+                    <p className="secondary">{role}</p>
                 </div>
                 <img src={img} className="cover" />
             </a>

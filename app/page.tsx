@@ -112,7 +112,9 @@ const tech = [
 export default function HomePage() {
 
   useEffect(() => {
-    AOS.init();
+    AOS.init({
+      disable: 'mobile',
+    });
   }, []);
 
   return (

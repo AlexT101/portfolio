@@ -8,7 +8,7 @@ body {
     font-family: "Open Sans", sans-serif;
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
-    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 94%, rgb(1, 1, 47) 100%);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 94%, rgb(1, 1, 47) 100%);
 }
 
 .main {
@@ -65,6 +65,12 @@ p,
 li {
     font-size: 1.2em;
     font-family: 'Roboto Mono';
+}
+
+p.secondary {
+    @media only screen and (max-width: 600px) {
+        margin-top: 0;
+    }
 }
 
 a {
@@ -174,13 +180,27 @@ a.link:hover {
     width: 100%;
     display: flex;
     justify-content: space-between;
+
+    @media only screen and (max-width: 600px) {
+        flex-direction: column;
+    }
 }
 
 img.cover {
     width: 98%;
+
+    @media only screen and (max-width: 600px) {
+        width: 70%;
+    }
+
     margin-left: -25px;
     border-bottom-left-radius: 25px;
     border-top-right-radius: 20px;
+
+    @media only screen and (max-width: 600px) {
+        border-top-right-radius: 10px;
+    }
+
     transition: 0.2s;
 }
 
@@ -305,6 +325,7 @@ a.link.return {
     display: flex;
     flex-direction: column;
     width: 30%;
+
     @media only screen and (max-width: 800px) {
         width: 100%;
         justify-content: center;
