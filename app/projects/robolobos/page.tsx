@@ -105,7 +105,7 @@ const Robolobos = () => {
 
             <Section title="Sponsorship Proposal">
                 <p>
-                    Running a robots team isn't cheap; our team incurred many expenses each year, including the costs for buying materials, registering our team with FIRST Robotics, purchasing promotional materials, paying the printing costs for our handouts, and paying
+                    Running a robotics team isn't cheap; our team incurred many expenses each year, including the costs for buying materials, registering our team with FIRST Robotics, purchasing promotional materials, paying the printing costs for our handouts, and paying
                     travel expenses for going to each competition. We sent a 10-page sponsorship proposal to potential sponsors to provide information about our team, need for sponsors, and possible sponsor benefits.
                 </p>
                 <Image src={Sponsor.src} subtitle="Sponsorship Proposal Contents" alt="Mockup of a two-page spread of the sponsorship proposal"/>
