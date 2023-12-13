@@ -16,9 +16,9 @@ interface ProjectProps {
 
 const Project = ({ type, title, role, img, href, offset }: ProjectProps) => {
 
-    AOS.init({
-        disable: 'mobile',
-      });
+    useEffect(() => {
+        AOS.init();
+    }, []);
 
     return (
         <div data-aos="fade-up" data-aos-easing="ease-sine" data-aos-anchor-placement="center-bottom" data-aos-once="true" data-aos-delay={offset}>
