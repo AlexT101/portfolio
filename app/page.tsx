@@ -2,6 +2,10 @@
 
 import './index.css';
 
+import { useEffect } from 'react';
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 //Project component for the project cards
 import Project from '../components/Project';
@@ -106,6 +110,11 @@ const tech = [
 ];
 
 export default function HomePage() {
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <main className="main">
       <div className="group">
@@ -113,36 +122,43 @@ export default function HomePage() {
           <h2 id="projects">About.</h2>
           <p className="subtext">Information about me and links to my accounts.</p>
         </div>
-      <div className="container">
-        <div className="box center about">
-          <p>Hi, I’m Alex Thummalapalli.</p>
-          <p>I’m majoring in computer science at the Georgia Institute of Technology. I enjoy building websites by combining the intricacies of front-end development with the artistry of UI/UX design.
-          </p>
+        <div className="container">
+          <div className="box center about" data-aos="fade-up" data-aos-easing="ease-sine" data-aos-anchor-placement="center-bottom" data-aos-once="true">
+            <p>Hi, I’m Alex Thummalapalli.</p>
+            <p>I’m majoring in computer science at the Georgia Institute of Technology. I enjoy building websites by combining the intricacies of front-end development with the artistry of UI/UX design.
+            </p>
+          </div>
+
+          <div data-aos="fade-up" data-aos-easing="ease-sine" data-aos-anchor-placement="center-bottom" data-aos-once="true" data-aos-delay={100}>
+          <a className="box github mini" href="https://github.com/AlexT101" target="_blank" rel="noopener noreferrer">
+            <div className="boxHeader">
+              <p>Github</p>
+            </div>
+            <img src={Github.src} className="logo" />
+          </a>
+          </div>
+          
+          <div data-aos="fade-up" data-aos-easing="ease-sine" data-aos-anchor-placement="center-bottom" data-aos-once="true" data-aos-delay={200}>
+          <a className="box linkedin mini" href="https://www.linkedin.com/in/alext101/" target="_blank" rel="noopener noreferrer">
+            <div className="boxHeader">
+              <p>Linkedin</p>
+            </div>
+            <img src={Linkedin.src} className="logo" />
+          </a>
+          </div>
+
         </div>
-        <a className="box github mini" href="https://github.com/AlexT101" target="_blank" rel="noopener noreferrer">
-          <div className="boxHeader">
-            <p>Github</p>
-          </div>
-          <img src={Github.src} className="logo" />
-        </a>
-        <a className="box linkedin mini" href="https://www.linkedin.com/in/alext101/" target="_blank" rel="noopener noreferrer">
-          <div className="boxHeader">
-            <p>Linkedin</p>
-          </div>
-          <img src={Linkedin.src} className="logo" />
-        </a>
-      </div>
       </div>
 
 
       <div className="group">
         <div className="info">
-          <h2 className="noMargin">Technology.</h2>
+          <h2>Technology.</h2>
           <p className="subtext">Languages, frameworks, and libraries I use for software or web development.</p>
         </div>
         <div className="logoContainer">
           {tech.map((val, ind) => (
-            <div key={ind}>
+            <div key={ind} data-aos="fade-up" data-aos-easing="ease-sine" data-aos-anchor-placement="center-bottom" data-aos-once="true" data-aos-delay={ind*50}>
               <img width={defaultWidth * val.variance} src={val.src} />
               <p className="subtext2">{val.name}</p>
             </div>
@@ -155,10 +171,10 @@ export default function HomePage() {
           <p className="subtext">Stuff I've been working on. Mostly in React.</p>
         </div>
         <div className="container">
-          <Project type="roam" title="Roam" role="Full-Stack" img={Roam.src} href="/projects/roam" />
-          <Project type="immerse" title="ImmerseGT" role="Front-End" img={Immerse.src} href="/projects/immersegt" />
-          <Project type="greenjournal" title="GreenJournal" role="Front-End" img={GreenJournal.src} href="/projects/greenjournal" />
-          <Project type="robolobos" title="Robolobos" role="Design" img={Robolobos.src} href="/projects/robolobos" />
+          <Project type="roam" title="Roam" role="Full-Stack" img={Roam.src} href="/projects/roam" offset={0}/>
+          <Project type="immerse" title="ImmerseGT" role="Front-End" img={Immerse.src} href="/projects/immersegt" offset={100} />
+          <Project type="greenjournal" title="GreenJournal" role="Front-End" img={GreenJournal.src} href="/projects/greenjournal" offset={200} />
+          <Project type="robolobos" title="Robolobos" role="Design" img={Robolobos.src} href="/projects/robolobos" offset={300} />
         </div>
       </div>
       <div className="group">
@@ -167,8 +183,8 @@ export default function HomePage() {
           <p className="subtext">UI/UX design concepts made in Adobe Illustrator.</p>
         </div>
         <div className="container">
-          <Project type="lifts" title="Lifts" role="UI/UX Mockup" img={Lifts.src} href="/projects/lifts" />
-          <Project type="valorant" title="Agent" role="UI/UX Mockup" img={Valorant.src} href="/projects/valorant" />
+          <Project type="lifts" title="Lifts" role="UI/UX Mockup" img={Lifts.src} href="/projects/lifts" offset={0}/>
+          <Project type="valorant" title="Agent" role="UI/UX Mockup" img={Valorant.src} href="/projects/valorant" offset={100}/>
         </div>
       </div>
     </main >
