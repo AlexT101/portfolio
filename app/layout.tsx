@@ -4,8 +4,8 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
 export const metadata = {
-  title: "AlexT",
-  description: "Alex Thummalapalli's Portfolio Website",
+  title: "AlexT Portfolio Website",
+  description: "I am Alex Thummalapalli, a CS student at Georgia Tech who enjoys web design and development.",
 };
 
 export default function RootLayout({ children }: { children: any }) {
