@@ -94,6 +94,7 @@ a.link:hover {
     border-bottom: 1px solid rgb(150, 152, 154);
     margin-left: 5vw;
     margin-right: 5vw;
+    text-align: center;
 }
 
 .footerContainer {
@@ -104,6 +105,7 @@ a.link:hover {
     border-top: 1px solid rgb(150, 152, 154);
     margin-left: 5vw;
     margin-right: 5vw;
+    text-align: center;
 }
 
 .box.about {
