@@ -154,7 +154,7 @@ export default function HomePage() {
       <div className="group">
         <div className="info">
           <h2>Technology.</h2>
-          <p className="subtext">Languages, frameworks, and libraries I use for software or web development.</p>
+          <p className="subtext">Languages, frameworks, and libraries I have used.</p>
         </div>
         <div className="logoContainer">
           {tech.map((val, ind) => (
