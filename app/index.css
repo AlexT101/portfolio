@@ -344,3 +344,9 @@ a.link.return {
     padding-bottom: 30px;
     border-top: 1px solid rgb(150, 152, 154);
 }
+
+.note {
+    font-size: 2em;
+    color: rgb(150, 152, 154);
+    margin-top: 0;
+}

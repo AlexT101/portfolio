@@ -13,6 +13,7 @@ const Immerse = () => {
         <article className="article">
             <Header
                 title="ImmerseGT Event Platform."
+                progress={true}
                 description="Online event platform for the 2024 ImmerseGT Hackathon. Allows participants to register for the hackathon, search for other participants, form teams, and view an up-to-date schedule of the event."
                 src={ImmerseGTFull.src}
                 alt="Screenshot of the ImmerseGT website with the message 'Hack with us at ImmerseGT', a description, registration buttons, and a picture of a VR headset"
@@ -20,6 +21,7 @@ const Immerse = () => {
             />
 
             <Section title="About">
+                <p><i>This project is currently in progress with an estimated completion date of March 1st. The 2024 ImmerseGT hackathon will be held in April.</i></p>
                 <p>
                     ImmerseGT is a hackathon hosted by the GTXR club and Startup Exchange at Georgia Tech. Participants can enter into various
                     XR / virtual reality-based categories for a chance to win up to $20,000 in prizes. The hackathon was first held in 2023,
@@ -29,7 +31,6 @@ const Immerse = () => {
                 </p>
                 <br />
                 <p>Github Link: <a className="link" href="https://github.com/AlexT101/ImmerseGT-Event-Platform">https://github.com/AlexT101/ImmerseGT-Event-Platform</a></p>
-                <p>Website Link: <a className="link" href="">Link here</a></p>
             </Section>
 
             <Section title="Tech Used">
@@ -55,7 +56,7 @@ const Immerse = () => {
             </Section>
 
             <Section title="Role">
-                <p>I was the sole designer and frontend developer for this project. I worked with members of GTXR to ensure
+                <p>I was the sole designer and main frontend developer for this project. I worked with members of GTXR to ensure
                     the website met their requirements.</p>
                 <p>UI/UX Design</p>
                 <p>
