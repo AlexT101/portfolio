@@ -2,6 +2,8 @@
 
 This is my portfolio website, built using React.
 
+<img src="public/Website.png">
+
 ## Technologies Used
 - React
 - HTML

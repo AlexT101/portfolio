@@ -13,6 +13,7 @@ const Roam = () => {
         <article className="article">
             <Header
                 title="Roam."
+                progress={false}
                 description="Log your travel experiences through pins on an interactive globe. Add locations to your travel history with notes to remember your journey, or plan your future adventures with a wishlist feature."
                 src={RoamFull.src}
                 alt="Screenshot of the Roam website with a large interactive globe with pins in the middle and buttons on the right"

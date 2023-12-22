@@ -30,6 +30,7 @@ const Robolobos = () => {
         <article className="article">
             <Header
                 title="Robolobos"
+                progress={false}
                 description="Branding and graphic design for a high school robotics team, the 14361 Robolobos, including a variety of print materials such as portfolios, flyers, brochures, business cards, etc."
                 src={Flyer3.src}
                 alt="A picture of printed handouts, including flyers and brochures, on a table at a FIRST Robotisc competition"

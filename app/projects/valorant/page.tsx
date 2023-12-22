@@ -13,6 +13,7 @@ const Valorant = () => {
         <article className="article">
             <Header
                 title="Agent"
+                progress={false}
                 description="UI/UX mockup of an agent (playable character) information page for the game Valorant. Not affiliated with Riot/Valorant - this is my own work based on their design style. The current page displays information about Sova, an agent in the game."
                 src={ValorantFull.src}
                 alt="Detailed design showing the Valorant Agents website including a hero header with summary information about the Sova agent and several other sections about him."
