@@ -8,7 +8,11 @@ import Footer from '../components/Footer';
 
 export const metadata = {
   title: "AlexT Portfolio Website",
-  description: "I am Alex Thummalapalli, a CS student at Georgia Tech who enjoys web design and development.",
+  description: "CS student at Georgia Tech who enjoys design and development.",
+  openGraph: {
+    title: "AlexT Portfolio Website",
+    description: "CS student at Georgia Tech who enjoys design and development."
+  }
 };
 
 export default function RootLayout({ children }: { children: any }) {
@@ -21,6 +25,14 @@ export default function RootLayout({ children }: { children: any }) {
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width, user-scalable=no"
         />
+        <meta property="og:image" content="<generated>" />
+        <meta property="og:image:type" content="<generated>" />
+        <meta property="og:image:width" content="<generated>" />
+        <meta property="og:image:height" content="<generated>" />
+        <meta name="twitter:image" content="<generated>" />
+        <meta name="twitter:image:type" content="<generated>" />
+        <meta name="twitter:image:width" content="<generated>" />
+        <meta name="twitter:image:height" content="<generated>" />
       </head>
       <body>
         <Navbar />
