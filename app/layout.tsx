@@ -7,6 +7,7 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
 export const metadata = {
+  metadataBase: new URL('https://alext.vercel.app/'),
   title: "AlexT Portfolio Website",
   description: "CS student at Georgia Tech who enjoys design and development.",
   openGraph: {
