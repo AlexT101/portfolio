@@ -37,11 +37,19 @@ body {
     justify-content: space-between;
     text-decoration-line: none;
     text-decoration: none;
+
+    @media only screen and (max-width: 800px) {
+        height: auto;
+    }
 }
 
 .box.mini {
-    max-width: 150px;
-    height: 400px;
+    height: 80px;
+
+    @media only screen and (min-width: 800px) {
+        max-width: 150px;
+        height: 400px;
+    }
 }
 
 .box.center {
@@ -68,8 +76,11 @@ li {
 }
 
 p.secondary {
-    @media only screen and (max-width: 600px) {
-        margin-top: 0;
+    @media only screen and (max-width: 800px) {
+        margin-top: -10px;
+        font-size: 1em;
+        color: rgb(200, 200, 200);
+        font-style: italic;
     }
 }
 
@@ -181,7 +192,7 @@ a.link:hover {
     display: flex;
     justify-content: space-between;
 
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 800px) {
         flex-direction: column;
     }
 }
@@ -189,7 +200,7 @@ a.link:hover {
 img.cover {
     width: 98%;
 
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 800px) {
         width: 70%;
     }
 
@@ -197,7 +208,7 @@ img.cover {
     border-bottom-left-radius: 25px;
     border-top-right-radius: 20px;
 
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 800px) {
         border-top-right-radius: 10px;
     }
 
@@ -209,6 +220,10 @@ img.logo {
     margin-left: 0px;
     margin-bottom: 25px;
     border-radius: 0;
+
+    @media only screen and (max-width: 800px) {
+        visibility: hidden;
+    }
 }
 
 .article {
@@ -267,6 +282,12 @@ img.logo {
     margin-top: 0px;
 }
 
+.subtext.mainPage {
+    @media only screen and (max-width: 800px) {
+        margin-bottom: 0px;
+    }
+}
+
 .subtext2 {
     color: rgb(200, 201, 202);
     margin-top: 0.5em;
@@ -287,6 +308,14 @@ img.logo {
 
 .noMargin {
     margin-bottom: 0;
+}
+
+a.link {
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
 }
 
 a.link.navHeader {
@@ -318,6 +347,8 @@ a.link.return {
 
     @media only screen and (max-width: 800px) {
         flex-direction: column;
+        margin-top: 0px;
+        margin-bottom: 20px;
     }
 }
 
@@ -325,13 +356,15 @@ a.link.return {
     display: flex;
     flex-direction: column;
     width: 30%;
+    padding-top: 50px;
 
     @media only screen and (max-width: 800px) {
         width: 100%;
         justify-content: center;
+        padding-top: 0;
     }
 
-    padding-top: 50px;
+
 }
 
 .container {

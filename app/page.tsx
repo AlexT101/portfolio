@@ -112,7 +112,9 @@ const tech = [
 export default function HomePage() {
 
   useEffect(() => {
-    AOS.init();
+    AOS.init({
+      disable: 'mobile'
+    });
   }, []);
 
   return (
@@ -120,7 +122,7 @@ export default function HomePage() {
       <div className="group">
         <div className="info">
           <h2 id="projects">About.</h2>
-          <p className="subtext">Information about me and links to my accounts.</p>
+          <p className="subtext mainPage">Information about me and links to my accounts.</p>
         </div>
         <div className="container">
           <div className="box center about" data-aos="fade-up" data-aos-easing="ease-sine" data-aos-anchor-placement="center-bottom" data-aos-once="true">
@@ -130,21 +132,21 @@ export default function HomePage() {
           </div>
 
           <div data-aos="fade-up" data-aos-easing="ease-sine" data-aos-anchor-placement="center-bottom" data-aos-once="true" data-aos-delay={100}>
-          <a className="box github mini" href="https://github.com/AlexT101" target="_blank" rel="noopener noreferrer">
-            <div className="boxHeader">
-              <p>Github</p>
-            </div>
-            <img src={Github.src} className="logo" />
-          </a>
+            <a className="box github mini" href="https://github.com/AlexT101" target="_blank" rel="noopener noreferrer">
+              <div className="boxHeader">
+                <p>Github</p>
+              </div>
+              <img src={Github.src} className="logo" />
+            </a>
           </div>
-          
+
           <div data-aos="fade-up" data-aos-easing="ease-sine" data-aos-anchor-placement="center-bottom" data-aos-once="true" data-aos-delay={200}>
-          <a className="box linkedin mini" href="https://www.linkedin.com/in/alext101/" target="_blank" rel="noopener noreferrer">
-            <div className="boxHeader">
-              <p>Linkedin</p>
-            </div>
-            <img src={Linkedin.src} className="logo" />
-          </a>
+            <a className="box linkedin mini" href="https://www.linkedin.com/in/alext101/" target="_blank" rel="noopener noreferrer">
+              <div className="boxHeader">
+                <p>Linkedin</p>
+              </div>
+              <img src={Linkedin.src} className="logo" />
+            </a>
           </div>
 
         </div>
@@ -154,11 +156,11 @@ export default function HomePage() {
       <div className="group">
         <div className="info">
           <h2>Technology.</h2>
-          <p className="subtext">Languages, frameworks, and libraries I have used.</p>
+          <p className="subtext mainPage">Languages, frameworks, and libraries I have used.</p>
         </div>
         <div className="logoContainer">
           {tech.map((val, ind) => (
-            <div key={ind} data-aos="fade-up" data-aos-easing="ease-sine" data-aos-anchor-placement="center-bottom" data-aos-once="true" data-aos-delay={ind*50}>
+            <div key={ind} data-aos="fade-up" data-aos-easing="ease-sine" data-aos-anchor-placement="center-bottom" data-aos-once="true" data-aos-delay={ind * 50}>
               <img width={defaultWidth * val.variance} src={val.src} />
               <p className="subtext2">{val.name}</p>
             </div>
@@ -168,10 +170,10 @@ export default function HomePage() {
       <div className="group">
         <div className="info">
           <h2 id="projects">Projects.</h2>
-          <p className="subtext">Stuff I've been working on. Mostly in React.</p>
+          <p className="subtext mainPage">Stuff I've been working on. Mostly in React.</p>
         </div>
         <div className="container">
-          <Project type="roam" title="Roam" role="Full-Stack" img={Roam.src} href="/projects/roam" offset={0}/>
+          <Project type="roam" title="Roam" role="Full-Stack" img={Roam.src} href="/projects/roam" offset={0} />
           <Project type="immerse" title="ImmerseGT" role="Front-End" img={Immerse.src} href="/projects/immersegt" offset={100} />
           <Project type="greenjournal" title="GreenJournal" role="Front-End" img={GreenJournal.src} href="/projects/greenjournal" offset={200} />
           <Project type="robolobos" title="Robolobos" role="Design" img={Robolobos.src} href="/projects/robolobos" offset={300} />
@@ -180,11 +182,11 @@ export default function HomePage() {
       <div className="group">
         <div className="info">
           <h2 id="projects">Concepts.</h2>
-          <p className="subtext">UI/UX design concepts made in Adobe Illustrator.</p>
+          <p className="subtext mainPage">UI/UX design concepts made in Adobe Illustrator.</p>
         </div>
         <div className="container">
-          <Project type="lifts" title="Lifts" role="UI/UX Mockup" img={Lifts.src} href="/projects/lifts" offset={0}/>
-          <Project type="valorant" title="Agent" role="UI/UX Mockup" img={Valorant.src} href="/projects/valorant" offset={100}/>
+          <Project type="lifts" title="Lifts" role="UI/UX Mockup" img={Lifts.src} href="/projects/lifts" offset={0} />
+          <Project type="valorant" title="Agent" role="UI/UX Mockup" img={Valorant.src} href="/projects/valorant" offset={100} />
         </div>
       </div>
     </main >
