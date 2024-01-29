@@ -30,7 +30,7 @@ const Immerse = () => {
                     more as a one stop shop for the hackathon.
                 </p>
                 <br />
-                <p>Github Link: <a className="link" href="https://github.com/AlexT101/ImmerseGT-Event-Platform">https://github.com/AlexT101/ImmerseGT-Event-Platform</a></p>
+                <p className="subtext">Website Link: <a className="link" href="https://www.immersegt.io/">https://www.immersegt.io/</a></p>
             </Section>
 
             <Section title="Tech Used">
@@ -39,6 +39,7 @@ const Immerse = () => {
                     <li>React Redux</li>
                     <li>Redux Toolkit</li>
                     <li>Next.js</li>
+                    <li>Supabase</li>
                     <li>React</li>
                     <li>Typescript</li>
                     <li>HTML</li>
