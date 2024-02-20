@@ -15,6 +15,8 @@ import Roam from '../public/roam-before.png';
 import Immerse from '../public/immerse-before.png';
 import GreenJournal from '../public/greenjournal-before.png';
 import Robolobos from '../public/Whiteframe.png';
+import MarketMatch from '../public/marketmatch-before.png';
+import Scheduler from '../public/scheduler-before.png';
 import Lifts from '../public/lifts-before.png';
 import Valorant from '../public/valorant-before.png';
 
@@ -173,10 +175,12 @@ export default function HomePage() {
           <p className="subtext mainPage">Stuff I've been working on. Mostly in React.</p>
         </div>
         <div className="container">
+          <Project type="immerse" title="ImmerseGT" role="Front-End" img={Immerse.src} href="/projects/immersegt" offset={0} />
+          <Project type="market" title="MarketMatch" role="Front-End" img={MarketMatch.src} href="/projects/marketmatch" offset={0} />
+          <Project type="greenjournal" title="GreenJournal" role="Front-End" img={GreenJournal.src} href="/projects/greenjournal" offset={0} />
           <Project type="roam" title="Roam" role="Full-Stack" img={Roam.src} href="/projects/roam" offset={0} />
-          <Project type="immerse" title="ImmerseGT" role="Front-End" img={Immerse.src} href="/projects/immersegt" offset={100} />
-          <Project type="greenjournal" title="GreenJournal" role="Front-End" img={GreenJournal.src} href="/projects/greenjournal" offset={200} />
-          <Project type="robolobos" title="Robolobos" role="Design" img={Robolobos.src} href="/projects/robolobos" offset={300} />
+          <Project type="scheduler" title="Scheduler" role="Android" img={Scheduler.src} href="/projects/scheduler" offset={0} />
+          <Project type="robolobos" title="Robolobos" role="Design" img={Robolobos.src} href="/projects/robolobos" offset={0} />
         </div>
       </div>
       <div className="group">

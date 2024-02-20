@@ -30,7 +30,7 @@ const Immerse = () => {
                     more as a one stop shop for the hackathon.
                 </p>
                 <br />
-                <p className="subtext">Website Link: <a className="link" href="https://www.immersegt.io/">https://www.immersegt.io/</a></p>
+                <p className="subtext">Website Link: <a className="link" href="https://www.immersegt.io/">immersegt.io</a></p>
             </Section>
 
             <Section title="Tech Used">

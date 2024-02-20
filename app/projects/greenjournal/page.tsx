@@ -30,8 +30,8 @@ const GreenJournal = () => {
                     earth, along with footprint comparison indicators, to help people better understand their footprint in context.
                 </p>
                 <br />
-                <p>Github Link: <a className="link" href="https://github.com/barrosodavid/greenjournal">https://github.com/barrosodavid/greenjournal</a></p>
-                <p>Website Link: <a className="link" href="https://www.greenjournal.tech">https://www.greenjournal.tech</a></p>
+                <p>Github Link: <a className="link" href="https://github.com/barrosodavid/greenjournal">github.com/barrosodavid/greenjournal</a></p>
+                <p>Website Link: <a className="link" href="https://www.greenjournal.tech">www.greenjournal.tech</a></p>
             </Section>
 
             <Section title="Tech Used">

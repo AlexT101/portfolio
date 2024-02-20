@@ -30,8 +30,8 @@ const Roam = () => {
                     as the option to view locations in a list format.
                 </p>
                 <br />
-                <p className="subtext">Github Link: <a className="link" href="https://github.com/michelle692/roam">https://github.com/michelle692/roam</a></p>
-                <p className="subtext">Website Link: <a className="link" href="https://roam-the-world.vercel.app/">https://roam-the-world.vercel.app/</a></p>
+                <p className="subtext">Github Link: <a className="link" href="https://github.com/michelle692/roam">github.com/michelle692/roam</a></p>
+                <p className="subtext">Website Link: <a className="link" href="https://roam-the-world.vercel.app/">roam-the-world.vercel.app</a></p>
             </Section>
 
             <Section title="Tech Used">
