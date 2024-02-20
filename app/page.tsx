@@ -176,11 +176,11 @@ export default function HomePage() {
         </div>
         <div className="container">
           <Project type="immerse" title="ImmerseGT" role="Front-End" img={Immerse.src} href="/projects/immersegt" offset={0} />
-          <Project type="market" title="MarketMatch" role="Front-End" img={MarketMatch.src} href="/projects/marketmatch" offset={0} />
-          <Project type="greenjournal" title="GreenJournal" role="Front-End" img={GreenJournal.src} href="/projects/greenjournal" offset={0} />
-          <Project type="roam" title="Roam" role="Full-Stack" img={Roam.src} href="/projects/roam" offset={0} />
-          <Project type="scheduler" title="Scheduler" role="Android" img={Scheduler.src} href="/projects/scheduler" offset={0} />
-          <Project type="robolobos" title="Robolobos" role="Design" img={Robolobos.src} href="/projects/robolobos" offset={0} />
+          <Project type="market" title="MarketMatch" role="Front-End" img={MarketMatch.src} href="/projects/marketmatch" offset={50} />
+          <Project type="greenjournal" title="GreenJournal" role="Front-End" img={GreenJournal.src} href="/projects/greenjournal" offset={100} />
+          <Project type="roam" title="Roam" role="Full-Stack" img={Roam.src} href="/projects/roam" offset={150} />
+          <Project type="scheduler" title="Scheduler" role="Android" img={Scheduler.src} href="/projects/scheduler" offset={200} />
+          <Project type="robolobos" title="Robolobos" role="Design" img={Robolobos.src} href="/projects/robolobos" offset={250} />
         </div>
       </div>
       <div className="group">
@@ -190,7 +190,7 @@ export default function HomePage() {
         </div>
         <div className="container">
           <Project type="lifts" title="Lifts" role="UI/UX Mockup" img={Lifts.src} href="/projects/lifts" offset={0} />
-          <Project type="valorant" title="Agent" role="UI/UX Mockup" img={Valorant.src} href="/projects/valorant" offset={100} />
+          <Project type="valorant" title="Agent" role="UI/UX Mockup" img={Valorant.src} href="/projects/valorant" offset={50} />
         </div>
       </div>
     </main >
