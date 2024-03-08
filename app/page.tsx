@@ -17,6 +17,7 @@ import GreenJournal from '../public/greenjournal-before.png';
 import Robolobos from '../public/Whiteframe.png';
 import MarketMatch from '../public/marketmatch-before.png';
 import Scheduler from '../public/scheduler-before.png';
+import Skru from '../public/skru-before.png';
 import Lifts from '../public/lifts-before.png';
 import Valorant from '../public/valorant-before.png';
 
@@ -186,11 +187,12 @@ export default function HomePage() {
       <div className="group">
         <div className="info">
           <h2 id="projects">Concepts.</h2>
-          <p className="subtext mainPage">UI/UX design concepts made in Adobe Illustrator.</p>
+          <p className="subtext mainPage">UI/UX design concepts made in Figma and Adobe Illustrator.</p>
         </div>
         <div className="container">
-          <Project type="lifts" title="Lifts" role="UI/UX Mockup" img={Lifts.src} href="/projects/lifts" offset={0} />
-          <Project type="valorant" title="Agent" role="UI/UX Mockup" img={Valorant.src} href="/projects/valorant" offset={50} />
+        <Project type="skru" title="Skru" role="UI/UX Mockup" img={Skru.src} href="/projects/skru" offset={0} />
+          <Project type="lifts" title="Lifts" role="UI/UX Mockup" img={Lifts.src} href="/projects/lifts" offset={50} />
+          <Project type="valorant" title="Agent" role="UI/UX Mockup" img={Valorant.src} href="/projects/valorant" offset={100} />
         </div>
       </div>
     </main >

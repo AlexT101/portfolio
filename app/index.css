@@ -189,6 +189,12 @@ a.link:hover {
     box-shadow: 0px 0px 20px 0px rgb(44, 154, 100);
 }
 
+.box.skru:hover {
+    transform: translate(0, -5px);
+    background-color: #669BA9;
+    box-shadow: 0px 0px 20px 0px #669BA9;
+}
+
 
 .box.immerse:hover img,
 .box.greenjournal:hover img,
@@ -196,7 +202,8 @@ a.link:hover {
 .box.lifts:hover img,
 .box.valorant:hover img,
 .box.market:hover img,
-.box.scheduler:hover img{
+.box.scheduler:hover img,
+.box.skru:hover img {
     background-color: rgba(0, 0, 0, 0.5);
     margin-bottom: -1px;
 }
