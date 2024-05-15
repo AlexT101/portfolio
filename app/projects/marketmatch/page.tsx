@@ -1,14 +1,16 @@
-'use client';
-
 import 'app/index.css';
 import Page2 from 'public/page2.png';
-
-import Image from 'components/Image';
 import Section from 'components/Section';
 import Header from 'components/Header';
 import Return from 'components/Return';
+import type { Metadata } from 'next';
 
-const MarketMatch = () => {
+export const metadata: Metadata = {
+    title: 'MarketMatch',
+    description: 'A gamified stock portfolio app based on Tinder. Input your preferences, see our stock recommendations, and swipe right on your favorites.',
+}
+
+export default function MarketMatch() {
     return (
         <article className="article">
             <Header
@@ -35,11 +37,11 @@ const MarketMatch = () => {
                 <p className="subtext">Website Link: <a className="link" href="https://marketmatch.tech">marketmatch.tech</a></p>
             </Section>
             <div className="largeImgRow">
-            <video className="video" controls muted>
-                <source src="/Overview.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-            </video>
-            <p>Walkthrough of the MarketMatch App</p>
+                <video className="video" controls muted>
+                    <source src="/Overview.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
+                <p>Walkthrough of the MarketMatch App</p>
             </div>
 
             <Section title="Tech Used">
@@ -103,5 +105,3 @@ const MarketMatch = () => {
         </article>
     )
 }
-
-export default MarketMatch;

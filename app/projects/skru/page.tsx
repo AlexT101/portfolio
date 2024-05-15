@@ -1,16 +1,19 @@
-'use client';
-
 import 'app/index.css';
 import Canvas from 'public/Canvas.png';
 import Login from 'public/Login.png';
 import Projects from 'public/Projects.png';
-
 import Image from 'components/Image';
 import Section from 'components/Section';
 import Header from 'components/Header';
 import Return from 'components/Return';
+import type { Metadata } from 'next';
 
-const Skru = () => {
+export const metadata: Metadata = {
+    title: 'Skru',
+    description: 'Concept design for a web-based pixel art editor. Skru lets users edit paletted bitmaps from their browser, with functionality for arranging layers, choosing color palettes, transforming the canvas, and adding shapes/text to their pixel art.',
+}
+
+export default function Skru() {
     return (
         <article className="article">
             <Header
@@ -55,5 +58,3 @@ const Skru = () => {
         </article>
     )
 }
-
-export default Skru;

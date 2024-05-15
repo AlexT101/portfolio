@@ -1,8 +1,4 @@
 import '../app/index.css';
-
-import { useEffect } from 'react';
-
-import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 interface ProjectProps {
@@ -15,11 +11,6 @@ interface ProjectProps {
 }
 
 const Project = ({ type, title, role, img, href, offset }: ProjectProps) => {
-
-    useEffect(() => {
-        AOS.init();
-    }, []);
-
     return (
         <div data-aos="fade-up" data-aos-easing="ease-sine" data-aos-anchor-placement="center-bottom" data-aos-once="true" data-aos-delay={offset}>
             <a className={"box " + type} href={href}>

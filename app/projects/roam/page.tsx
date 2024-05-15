@@ -1,14 +1,16 @@
-'use client';
-
 import 'app/index.css';
 import RoamFull from 'public/roam.png';
-
-import Image from 'components/Image';
 import Section from 'components/Section';
 import Header from 'components/Header';
 import Return from 'components/Return';
+import type { Metadata } from 'next';
 
-const Roam = () => {
+export const metadata: Metadata = {
+    title: 'Roam',
+    description: 'Log your travel experiences through pins on an interactive globe. Add locations to your travel history with notes to remember your journey, or plan your future adventures with a wishlist feature.',
+}
+
+export default function Roam() {
     return (
         <article className="article">
             <Header
@@ -84,5 +86,3 @@ const Roam = () => {
         </article>
     )
 }
-
-export default Roam;

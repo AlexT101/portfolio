@@ -1,14 +1,16 @@
-'use client';
-
 import 'app/index.css';
 import ImmerseGTFull from 'public/immersegt.png';
-
-import Image from 'components/Image';
 import Section from 'components/Section';
 import Header from 'components/Header';
 import Return from 'components/Return';
+import type { Metadata } from 'next';
 
-const Immerse = () => {
+export const metadata: Metadata = {
+    title: 'ImmerseGT Event Platform',
+    description: 'Online event platform for the 2024 ImmerseGT Hackathon. Allows participants to register for the hackathon, search for other participants, form teams, and view an up-to-date schedule of the event.',
+}
+
+export default function Immerse() {
     return (
         <article className="article">
             <Header
@@ -80,5 +82,3 @@ const Immerse = () => {
         </article>
     )
 }
-
-export default Immerse;

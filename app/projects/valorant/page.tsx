@@ -1,14 +1,16 @@
-'use client';
-
 import 'app/index.css';
 import ValorantFull from 'public/Sova.png';
-
-import Image from 'components/Image';
 import Section from 'components/Section';
 import Header from 'components/Header';
 import Return from 'components/Return';
+import type { Metadata } from 'next';
 
-const Valorant = () => {
+export const metadata: Metadata = {
+    title: 'Agent',
+    description: 'UI/UX mockup of an agent (playable character) information page for the game Valorant. Not affiliated with Riot/Valorant - this is my own work based on their design style. The current page displays information about Sova, an agent in the game.',
+}
+
+export default function Valorant() {
     return (
         <article className="article">
             <Header
@@ -47,5 +49,3 @@ const Valorant = () => {
         </article>
     )
 }
-
-export default Valorant;

@@ -1,14 +1,16 @@
-'use client';
-
 import 'app/index.css';
 import LiftsFull from 'public/lifts.png';
-
-import Image from 'components/Image';
 import Section from 'components/Section';
 import Header from 'components/Header';
 import Return from 'components/Return';
+import type { Metadata } from 'next';
 
-const Lifts = () => {
+export const metadata: Metadata = {
+    title: 'Lifts',
+    description: 'UI/UX mockup for a mobile app that lets bodybuilders and powerlifters track their fitness journey. Users can start a workout and log individual lifts, such as bench press or deadlift, to track their numbers and progress over time.',
+}
+
+export default function Lifts() {
     return (
         <article className="article">
             <Header
@@ -47,5 +49,3 @@ const Lifts = () => {
         </article>
     )
 }
-
-export default Lifts;

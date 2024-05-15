@@ -1,6 +1,6 @@
 {
   "name": "alex-thummalapalli-portfolio",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -11,7 +11,7 @@
     "@vercel/analytics": "^1.1.1",
     "@vercel/speed-insights": "^1.0.2",
     "aos": "^2.3.4",
-    "next": "14.0.1",
+    "next": "^14.2.3",
     "postcss-preset-mantine": "^1.11.1",
     "react": "18.2.0",
     "react-dom": "18.2.0"

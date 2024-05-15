@@ -1,10 +1,4 @@
-'use client';
-
 import './index.css';
-
-import { useEffect } from 'react';
-
-import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 //Project component for the project cards
@@ -39,6 +33,9 @@ import MongoDB from '../public/Logo10.svg';
 import Figma from '../public/Logo11.svg';
 import Java from '../public/Logo12.svg';
 import CPlusPlus from '../public/Logo13.svg';
+
+//Animate on scroll library
+import Animate from '../components/Animate';
 
 //Default size of the tech icons
 const defaultWidth = 80;
@@ -113,13 +110,6 @@ const tech = [
 ];
 
 export default function HomePage() {
-
-  useEffect(() => {
-    AOS.init({
-      disable: 'mobile'
-    });
-  }, []);
-
   return (
     <main className="main">
       <div className="group">
@@ -190,11 +180,13 @@ export default function HomePage() {
           <p className="subtext mainPage">UI/UX design concepts made in Figma and Adobe Illustrator.</p>
         </div>
         <div className="container">
-        <Project type="skru" title="Skru" role="UI/UX Mockup" img={Skru.src} href="/projects/skru" offset={0} />
+          <Project type="skru" title="Skru" role="UI/UX Mockup" img={Skru.src} href="/projects/skru" offset={0} />
           <Project type="lifts" title="Lifts" role="UI/UX Mockup" img={Lifts.src} href="/projects/lifts" offset={50} />
           <Project type="valorant" title="Agent" role="UI/UX Mockup" img={Valorant.src} href="/projects/valorant" offset={100} />
         </div>
       </div>
+
+      <Animate />
     </main >
   );
 }

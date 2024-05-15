@@ -1,14 +1,16 @@
-'use client';
-
 import 'app/index.css';
 import Render from 'public/Render.png';
-
-import Image from 'components/Image';
 import Section from 'components/Section';
 import Header from 'components/Header';
 import Return from 'components/Return';
+import type { Metadata } from 'next';
 
-const Scheduler = () => {
+export const metadata: Metadata = {
+    title: 'College Scheduler',
+    description: 'Android application to help college students manage their schedules, including their classes, assignments, exams, and tasks.',
+}
+
+export default function Scheduler() {
     return (
         <article className="article">
             <Header
@@ -23,7 +25,7 @@ const Scheduler = () => {
             <Section title="About">
                 <p className="subtext">
                     College Scheduler was built for CS2340: Objects and Design at Georgia Tech. Our class project was to build a mobile application on a team
-                    of three to help college students manage their schedules. We used Java and Android Studio to build the app. Each item (a class, assignment, etc) is 
+                    of three to help college students manage their schedules. We used Java and Android Studio to build the app. Each item (a class, assignment, etc) is
                     represented as a card for a user to interact with. The app lets users choose between several different views, with additional functionality for
                     sorting and filtering items.
                 </p>
@@ -40,8 +42,8 @@ const Scheduler = () => {
             <Section title="Approach">
                 <p className="subtext">
                     Our team's main focus was on keeping the app visually appealing and easy to use so that students wouldn't see scheduling as a
-                    complicated chore. We used a card-based design so that each item could be easily interacted with and so that students wouldn't have to 
-                    search through a long text-based list to find what they were looking for. We kept separate screens for classes, assignments, and exams 
+                    complicated chore. We used a card-based design so that each item could be easily interacted with and so that students wouldn't have to
+                    search through a long text-based list to find what they were looking for. We kept separate screens for classes, assignments, and exams
                     so that students could choose which view they wanted to see. However, we compiled all assignments, exams, and upcoming tasks onto a single to-do
                     list view so that students could prioritize upcoming work, with functionality for marking these items as complete and filtering them out of view.
                 </p>
@@ -62,5 +64,3 @@ const Scheduler = () => {
         </article>
     )
 }
-
-export default Scheduler;

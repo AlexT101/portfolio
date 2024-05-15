@@ -1,14 +1,16 @@
-'use client';
-
 import 'app/index.css';
 import GreenJournalFull from 'public/greenjournal.png';
-
-import Image from 'components/Image';
 import Section from 'components/Section';
 import Header from 'components/Header';
 import Return from 'components/Return';
+import type { Metadata } from 'next';
 
-const GreenJournal = () => {
+export const metadata: Metadata = {
+    title: 'GreenJournal',
+    description: 'Interactive dashboard that lets you monitor your carbon footprint through tracked behavioral data and statistical analysis. Based on data from the Environmental Protection Agency.',
+}
+
+export default function GreenJournal() {
     return (
         <article className="article">
             <Header
@@ -74,5 +76,3 @@ const GreenJournal = () => {
         </article>
     )
 }
-
-export default GreenJournal;
