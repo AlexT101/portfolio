@@ -6,17 +6,11 @@ interface ImageProps {
     alt: string
 }
 
-const Image = ({ src, subtitle, alt }: ImageProps) => {
+export default function Image({ src, subtitle, alt }: ImageProps) {
     return (
         <div className="largeImgRow">
-            <img src={src} className="image" alt={alt}/>
-            {subtitle !== "" ? (
-                <p>{subtitle}</p>
-            ) : (
-                <></>
-            )}
+            <img src={src} className="image" alt={alt} />
+            {subtitle !== "" && <p>{subtitle}</p>}
         </div>
     )
 }
-
-export default Image;

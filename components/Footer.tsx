@@ -1,6 +1,6 @@
 import '../app/index.css';
 
-const Footer = () => {
+export default function Footer() {
     return (
         <div className="navbar">
             <div className="footerContainer">
@@ -9,5 +9,3 @@ const Footer = () => {
         </div>
     )
 }
-
-export default Footer;

@@ -11,19 +11,15 @@ interface ImageProps {
     progress: boolean
 }
 
-const Header = ({ title, description, src, subtitle, alt, progress }: ImageProps) => {
+export default function Header({ title, description, src, subtitle, alt, progress }: ImageProps) {
     return (
         <section>
             <div className="header">
                 <h1>{title}</h1>
-                {progress ? (
-                <p className="note"><i>(in progress)</i></p>
-                ) : (<></>)}
+                {progress && <p className="note"><i>(in progress)</i></p>}
                 <p>{description}</p>
             </div>
-            <Image src={src} subtitle={subtitle} alt={alt}/>
+            <Image src={src} subtitle={subtitle} alt={alt} />
         </section>
     )
 }
-
-export default Header;

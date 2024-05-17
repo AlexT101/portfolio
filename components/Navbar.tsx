@@ -1,6 +1,6 @@
 import '../app/index.css';
 
-const Navbar = () => {
+export default function Navbar() {
     return (
         <div className="navbar">
             <div className="navbarContainer">
@@ -9,5 +9,3 @@ const Navbar = () => {
         </div>
     )
 }
-
-export default Navbar;

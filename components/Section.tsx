@@ -5,14 +5,11 @@ interface ImageProps {
     children: React.ReactNode,
 }
 
-const Section = ({ title, children }: ImageProps) => {
+export default function Section({ title, children }: ImageProps) {
     return (
         <section className="sectionContent">
             <h2 className="sectionTitle">{title}</h2>
             {children}
-            <br/>
         </section>
     )
 }
-
-export default Section;

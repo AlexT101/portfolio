@@ -10,7 +10,7 @@ interface ProjectProps {
     offset: number
 }
 
-const Project = ({ type, title, role, img, href, offset }: ProjectProps) => {
+export default function Project({ type, title, role, img, href, offset }: ProjectProps) {
     return (
         <div data-aos="fade-up" data-aos-easing="ease-sine" data-aos-anchor-placement="center-bottom" data-aos-once="true" data-aos-delay={offset}>
             <a className={"box " + type} href={href}>
@@ -23,6 +23,3 @@ const Project = ({ type, title, role, img, href, offset }: ProjectProps) => {
         </div>
     )
 }
-
-export default Project;
-

@@ -1,9 +1,7 @@
 import '../app/index.css';
 
-const Return = () => {
+export default function Return() {
     return (
         <a href="/" className="link return">Back To Homepage</a>
     )
 }
-
-export default Return;
