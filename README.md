@@ -1,6 +1,6 @@
-# Portfolio
+# Old Portfolio
 
-This is my portfolio website, built using React.
+This is my old portfolio website, built using React. View my new portfolio website at https://alext.app.
 
 <img src="public/Website.png">
 
